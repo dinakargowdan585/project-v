@@ -1,13 +1,13 @@
-# JODO — Two-Wheeler Group Buying Platform
-**"Join Together. Ride for Less."**
+# JODO — Rural Two-Wheeler Buying Club
+**"Better Bike Deals Start in Your Community."**
 
-A modern, premium, responsive landing page frontend prototype for **JODO**, an Indian technology startup enabling group buying for two-wheelers (Motorcycles, Scooters, and Electric Two-Wheelers).
+An authentic, human, responsive landing page frontend for **JODO**, a rural-first group-buying platform connecting two-wheeler buyers across Karnataka villages to negotiate better offers with authorised motorcycle and scooter dealerships.
 
 ---
 
 ## 🚀 Business Concept
 
-JODO helps people in India get better deals on new two-wheelers by bringing together multiple interested buyers of the same or related bikes and scooters. JODO combines buyer demand and negotiates special group discounts with authorized dealerships.
+JODO connects buyers from adjacent villages who intend to purchase the same motorcycle, scooter, or electric two-wheeler. By combining local rural demand into organized taluk clusters (e.g. Ramanagara, Nelamangala, Hoskote, Doddaballapura), JODO negotiates group pricing concessions, accessory packages, and transparent dealer offers with verified dealerships.
 
 The platform is exclusively for:
 - **Motorcycles**
@@ -20,7 +20,6 @@ The platform is exclusively for:
 
 ## 🎨 Design System & Bilingual Support
 
-Inspired by premium automotive and fintech platforms with the **Forest Green + Sage** brand identity:
 - **Primary Forest Green:** `#12372A`
 - **Deep Green:** `#1F513D`
 - **Fresh Green:** `#3FA66B`
@@ -29,94 +28,68 @@ Inspired by premium automotive and fintech platforms with the **Forest Green + S
 - **White:** `#FFFFFF`
 - **Main Text:** `#173126`
 - **Footer:** `#102B21`
-- **Typography:** Plus Jakarta Sans & Noto Sans Kannada (optimized line-height and fallbacks)
+- **Typography:** Plus Jakarta Sans & Noto Sans Kannada
 - **Bilingual Switcher:** Fully integrated toggle (`English | ಕನ್ನಡ`) in top navbar and mobile drawer with instant DOM re-translation and `localStorage` persistence.
-- **Styling:** Clean typography, rounded cards, subtle green borders, warm cream page backdrop, modern icons, smooth hover effects, responsive layout for desktop and mobile.
+- **Authentic Visual Language:** Grounded editorial layout, genuine photography, crisp 1px borders, subtle 6–12px radii, no artificial crowdfunding progress bars, and no generic AI landing page tropes.
 
 ---
 
 ## 📋 Page Sections
 
-1. **Navigation Bar (Sticky):**
-   - JODO Logo & Tagline
-   - Links: Home, Explore Bikes, How It Works, About Us, Contact
-   - "Join JODO" Button
-   - Responsive mobile drawer menu
+1. **Navigation Bar (Sticky & Understated):**
+   - JODO Logo & Subtitle (*"Rural Two-Wheeler Buying Club"*)
+   - Links: Home, Village Clusters, How It Works, Why JODO, Explore Bikes
+   - Language toggle: `English | ಕನ್ನಡ`
+   - *"Join a Buyer Group"* Button
 
-2. **Hero Section:**
-   - Large Headline: *"Your Next Ride. A Better Deal. Together."*
-   - Supporting Text: *"Why buy alone when you can buy together? Join other bike and scooter buyers, unlock exclusive group offers, and save more on your next ride."*
-   - Two CTA Buttons: **Explore Group Deals** & **Join the JODO Community**
-   - Hero visual with stylish Indian motorcycles and floating status cards
-   - Three Trust Highlights:
-     - Group Buying Power
-     - Exclusive Dealer Offers
-     - Free Registration
+2. **Editorial Hero Section:**
+   - Headline: *"Better Bike Deals Start in Your Community."*
+   - Supporting Text: *"Join people from nearby villages who want the same bike or scooter. JODO brings buyers together and negotiates better offers with dealerships."*
+   - Buttons: **Find Buyers Near You** & **How Group Buying Works ↓**
+   - Three Grounded Trust Bullets: 100% Free registration, direct dealership billing, official warranty & RTO registration in buyer's name
+   - Authentic photograph of a Royal Enfield on a Karnataka rural road with descriptive caption
 
-3. **Featured Two-Wheeler Campaigns:**
-   - Filter tabs: All Two-Wheelers, Motorcycles, Scooters, Electric EV
-   - 6 Example models:
-     1. **Royal Enfield Hunter 350** (Motorcycle • Bengaluru)
-     2. **TVS Apache RTR 160** (Motorcycle • Bengaluru)
-     3. **Honda Activa 125** (Scooter • Bengaluru)
-     4. **Yamaha R15** (Motorcycle • Bengaluru)
-     5. **Ather Rizta** (Electric Two-Wheeler • Bengaluru)
-     6. **Suzuki Access 125** (Scooter • Bengaluru)
-   - Vehicle cards include vehicle image, brand & model, vehicle category, city (Bengaluru), interested buyer counts, and "View Group Deal" button.
-   - Illustrative sample data clearly labelled.
+3. **Find Buyers Near Your Village (`#clusters`):**
+   - 4 Active Karnataka Taluk Clusters:
+     1. **Ramanagara – Channapatna Cluster** (`KA-42 Hub`)
+     2. **Nelamangala – Dobbaspet Cluster** (`KA-52 Hub`)
+     3. **Hoskote – Malur Cluster** (`KA-53 Hub`)
+     4. **Doddaballapura – Gauribidanur Cluster** (`KA-43 Hub`)
+   - Direct modal triggers pre-selecting the village cluster
 
-4. **How JODO Works (Four Steps):**
-   - **Step 1: Choose Your Ride** — *"Select the bike or scooter you want."*
-   - **Step 2: Join a Group** — *"Connect with other people interested in the same vehicle."*
-   - **Step 3: JODO Negotiates** — *"We approach dealerships to negotiate better group offers."*
-   - **Step 4: Get Your Deal** — *"Compare the offer and purchase directly from the dealership."*
+4. **How JODO Works (Four Clear Steps):**
+   - **Step 1: Choose your bike.** — *"Select the motorcycle or scooter you intend to purchase within the next 30 to 60 days."*
+   - **Step 2: Join nearby buyers.** — *"Connect with buyers from your taluk and nearby villages who want the same or related vehicle."*
+   - **Step 3: JODO negotiates with dealerships.** — *"We present collective buyer demand to authorised dealerships to negotiate group benefits, accessory bundles, and pricing concessions."*
+   - **Step 4: Compare the verified offer and purchase directly from the dealership.** — *"Review the transparent deal sheet. Pay the dealership directly, complete official RTO paperwork, and take delivery."*
 
-5. **Why Choose JODO?:**
-   - **Better Group Deals** — More interested buyers can create stronger negotiating power.
-   - **Save Time** — We bring dealership offers together in one place.
-   - **Trusted Dealerships** — Work with verified and authorized dealerships.
-   - **Free to Join** — Registration is free.
-   - **Optional ₹99 Assistance Service (Shown Separately):** Dedicated WhatsApp support specialist, doorstep test ride coordination, paperwork pre-check, and priority slot. (Basic registration is 100% Free).
+5. **How Group Buying Saves You Time and Money (`#why-jodo`):**
+   - Save Days of Travel Between Showrooms
+   - Real Leverage Instead of Fixed Retail Markups
+   - Safe & Direct: 100% Dealership-Billed
+   - Local Village Community Trust
 
-6. **Call-To-Action Section:**
-   - Headline: *"Your Dream Ride Is Better Together."*
-   - Supporting Text: *"Join JODO today and be part of a smarter way to buy two-wheelers."*
-   - Button: *"Join the Group"*
+6. **Active Two-Wheeler Campaigns (`#explore`):**
+   - Category filters: All Two-Wheelers, Motorcycles, Scooters, Electric EV
+   - 6 Grounded Vehicle Cards:
+     1. **Royal Enfield Hunter 350** (Ramanagara Cluster)
+     2. **TVS Apache RTR 160** (Doddaballapura Cluster)
+     3. **Honda Activa 125** (Nelamangala Cluster)
+     4. **Yamaha R15** (Hoskote Cluster)
+     5. **Ather Rizta** (Hoskote & Malur)
+     6. **Suzuki Access 125** (Nelamangala & Tumkur)
+   - Real demand indicators: Interested buyer tally, active cluster tag, and illustrative group benefit target.
+   - Optional ₹99 Dedicated Doorstep Assistance card with clear 100% free standard registration guarantee.
 
-7. **Footer:**
-   - JODO logo and tagline: *"Join Together. Ride for Less."*
-   - About JODO
-   - How It Works
-   - Explore Bikes
-   - Contact Us
-   - Privacy Policy
-   - Terms and Conditions
-   - Instagram, YouTube, and Facebook icons
-   - Mandatory Footer Note: *"JODO is a group-buying facilitation platform. Vehicle purchases are completed directly with dealerships."*
+7. **Call-To-Action Section (`#contact`):**
+   - Headline: *"Ready to buy a two-wheeler with your community?"*
+   - Subtitle: *"Tell us the bike or scooter you want. We will connect you with active buyers in your taluk and notify you as soon as the dealership offer is ready."*
+   - Action Button: *"Join Your Local Buyer Group"*
 
----
-
-## 🛠️ Tech Stack & Directory Structure
-
-```
-project-v/
-├── index.html               # Semantic HTML5
-├── css/
-│   └── styles.css           # Modern CSS styling (#101B35, #20C779)
-├── js/
-│   └── app.js               # Interactive filtering, modal & toasts
-├── assets/
-│   └── images/              # High-resolution optimized vehicle & hero imagery
-│       ├── hunter-350.webp
-│       ├── apache-rtr-160.webp
-│       ├── activa-125.webp
-│       ├── yamaha-r15.webp
-│       ├── ather-rizta-opt.webp
-│       ├── access-125.webp
-│       └── hero-banner.webp
-├── .gitignore
-└── README.md
-```
+8. **Footer:**
+   - JODO brand description, platform navigation, transparency and legal disclosures
+   - Mandatory regulatory disclosure box
+   - Social channels
 
 ---
 

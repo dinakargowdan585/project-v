@@ -20,8 +20,7 @@ const TRANSLATIONS = {
     "nav.join": "Join a Buyer Group",
     "lang.label": "Language / ಭಾಷೆ:",
 
-    // Hero Section (Lighter, Editorial, Grounded)
-    "hero.badge": "Rural & Semi-Urban Two-Wheeler Platform",
+    // Hero Section
     "hero.title": "Better Bike Deals Start in Your Community.",
     "hero.desc": "Join people from nearby villages who want the same bike or scooter. JODO brings buyers together and negotiates better offers with dealerships.",
     "hero.ctaExplore": "Find Buyers Near You",
@@ -29,12 +28,12 @@ const TRANSLATIONS = {
     "hero.trust1": "100% Free group registration — zero upfront fee",
     "hero.trust2": "Direct delivery & billing at authorised dealerships",
     "hero.trust3": "Full manufacturer warranty & RTO registration in your name",
-    "hero.caption": "Real deliveries, real savings: A customer taking delivery of a new motorcycle outside an authorized showroom in Ramanagara, Karnataka.",
+    "hero.captionTag": "Community Two-Wheeler Buying • Karnataka",
+    "hero.caption": "Real riders, collective bargaining: Connecting rural buyers across Karnataka to unlock verified group offers from authorised dealerships.",
 
     // Section: Find buyers near your village
     "clusters.title": "Find buyers near your village",
     "clusters.subtitle": "Two-wheeler buyers from adjacent villages form local clusters to coordinate showroom visits and unlock collective dealership benefits.",
-    "clusters.badge": "Community Demand Pools",
     "cluster.c1.name": "Ramanagara – Channapatna Cluster",
     "cluster.c1.villages": "Bidadi, Harohalli, Kailancha, Virupakshipura & nearby villages",
     "cluster.c1.models": "Popular demand: Royal Enfield Hunter 350, TVS Apache 160",
@@ -85,19 +84,18 @@ const TRANSLATIONS = {
     "filter.motorcycle": "Motorcycles",
     "filter.scooter": "Scooters",
     "filter.electric": "Electric EV",
-    "card.targetPrefix": "Group Target: ",
-    "card.progressLabel": "Illustrative Cluster Progress",
-    "card.activeBatch": "Active Batch",
+    "card.activeBatch": "Active Cluster",
+    "card.batchStatus": "Open for Group Offers",
+    "card.demandNote": "Nearby village buyers pooled for upcoming dealer round",
     "card.benefitLabel": "Illustrative Group Benefit Target",
     "card.viewDeal": "View Group Deal",
-    "card.disclaimer": "*Authenticity Note: Buyer numbers and package values shown are illustrative samples of active village batches. Final dealer offers are negotiated based on confirmed group size and formalized directly with authorised dealerships.",
+    "card.disclaimer": "*Illustrative sample data. Group formations and final dealer offers depend on participant count in each taluk and are confirmed directly with authorised dealerships.",
 
     // Specific Vehicles
     "card.hunter.brand": "Royal Enfield",
     "card.hunter.model": "Hunter 350",
     "card.hunter.cluster": "Ramanagara Cluster",
     "card.hunter.buyers": "18 Interested Buyers",
-    "card.hunter.target": "Target: 25",
     "card.hunter.val": "Est. ₹8,500 – ₹10,500 value",
     "card.hunter.note": "Negotiated bundle: Crash guard, pillion backrest & helmet",
 
@@ -105,7 +103,6 @@ const TRANSLATIONS = {
     "card.apache.model": "Apache RTR 160",
     "card.apache.cluster": "Doddaballapura Cluster",
     "card.apache.buyers": "16 Interested Buyers",
-    "card.apache.target": "Target: 20",
     "card.apache.val": "Est. ₹6,500 – ₹8,000 value",
     "card.apache.note": "Negotiated bundle: Extended warranty & ISI helmet package",
 
@@ -113,7 +110,6 @@ const TRANSLATIONS = {
     "card.activa.model": "Activa 125",
     "card.activa.cluster": "Nelamangala Cluster",
     "card.activa.buyers": "22 Interested Buyers",
-    "card.activa.target": "Target: 30",
     "card.activa.val": "Est. ₹5,500 – ₹7,200 value",
     "card.activa.note": "Negotiated bundle: Complete protection guard set & footmat",
 
@@ -121,7 +117,6 @@ const TRANSLATIONS = {
     "card.yamaha.model": "Yamaha R15",
     "card.yamaha.cluster": "Hoskote Cluster",
     "card.yamaha.buyers": "14 Interested Buyers",
-    "card.yamaha.target": "Target: 20",
     "card.yamaha.val": "Est. ₹9,000 – ₹11,500 value",
     "card.yamaha.note": "Negotiated bundle: Riding gear voucher & insurance subsidy",
 
@@ -129,7 +124,6 @@ const TRANSLATIONS = {
     "card.ather.model": "Ather Rizta",
     "card.ather.cluster": "Hoskote & Malur",
     "card.ather.buyers": "19 Interested Buyers",
-    "card.ather.target": "Target: 25",
     "card.ather.val": "Est. ₹11,000 – ₹14,000 value",
     "card.ather.note": "Negotiated bundle: Duo home fast-charger & Pro pack waiver",
 
@@ -137,7 +131,6 @@ const TRANSLATIONS = {
     "card.access.model": "Suzuki Access 125",
     "card.access.cluster": "Nelamangala & Tumkur",
     "card.access.buyers": "17 Interested Buyers",
-    "card.access.target": "Target: 25",
     "card.access.val": "Est. ₹5,800 – ₹7,000 value",
     "card.access.note": "Negotiated bundle: Chrome kit, floorboard mat & roadside assist",
 
@@ -153,7 +146,6 @@ const TRANSLATIONS = {
     "assist.feat4": "Support with loan paperwork from nationalised & rural banks",
 
     // Call to Action
-    "cta.badge": "Join Rural Karnataka's Buying Network",
     "cta.title": "Ready to buy a two-wheeler with your community?",
     "cta.desc": "Tell us the bike or scooter you want. We will connect you with active buyers in your taluk and notify you as soon as the dealership offer is ready.",
     "cta.btn": "Join Your Local Buyer Group",
@@ -209,7 +201,6 @@ const TRANSLATIONS = {
     "lang.label": "ಭಾಷೆ / Language:",
 
     // Hero Section
-    "hero.badge": "ಗ್ರಾಮೀಣ ಮತ್ತು ಅರೆ-ನಗರ ದ್ವಿಚಕ್ರ ವಾಹನ ಖರೀದಿ ವೇದಿಕೆ",
     "hero.title": "ನಿಮ್ಮ ಸಮುದಾಯದಿಂದಲೇ ಆರಂಭವಾಗಲಿ ಉತ್ತಮ ಬೈಕ್ ಡೀಲ್‌ಗಳು.",
     "hero.desc": "ನಿಮ್ಮ ಹತ್ತಿರದ ಊರು ಅಥವಾ ಗ್ರಾಮಗಳಲ್ಲಿದ್ದು, ಅದೇ ಬೈಕ್ ಅಥವಾ ಸ್ಕೂಟರ್ ಖರೀದಿಸಲು ಬಯಸುವ ಜನರೊಂದಿಗೆ ಕೈಜೋಡಿಸಿ. ಜೊಡೋ ಖರೀದಿದಾರರನ್ನು ಒಟ್ಟುಗೂಡಿಸಿ, ಅಧಿಕೃತ ಡೀಲರ್‌ಶಿಪ್‌ಗಳಿಂದ ಉತ್ತಮ ಆಫರ್‌ಗಳನ್ನು ಪಡೆಯಲು ನೆರವಾಗುತ್ತದೆ.",
     "hero.ctaExplore": "ನಿಮ್ಮ ಹತ್ತಿರದ ಖರೀದಿದಾರರನ್ನು ಹುಡುಕಿ",
@@ -217,12 +208,12 @@ const TRANSLATIONS = {
     "hero.trust1": "ಸೇರಲು 100% ಉಚಿತ — ಯಾವುದೇ ಮುಂಗಡ ಶುಲ್ಕವಿಲ್ಲ",
     "hero.trust2": "ಅಧಿಕೃತ ಡೀಲರ್‌ಶಿಪ್‌ನಿಂದಲೇ ನೇರ ಬಿಲ್ಲಿಂಗ್ ಮತ್ತು ವಿತರಣೆ",
     "hero.trust3": "ನಿಮ್ಮ ಹೆಸರಿನಲ್ಲೇ ಅಧಿಕೃತ ಆರ್‌ಟಿಒ ನೋಂದಣಿ ಮತ್ತು ಕಂಪನಿ ವಾರಂಟಿ",
-    "hero.caption": "ನೈಜ ವಿತರಣೆಗಳು, ನೈಜ ಉಳಿತಾಯ: ಕರ್ನಾಟಕದ ರಾಮನಗರದ ಅಧಿಕೃತ ಶೋರೂಂನಲ್ಲಿ ಹೊಸ ಬೈಕ್ ವಿತರಣೆ ಪಡೆಯುತ್ತಿರುವ ಗ್ರಾಹಕರು.",
+    "hero.captionTag": "ದ್ವಿಚಕ್ರ ವಾಹನ ಖರೀದಿ • ಕರ್ನಾಟಕ",
+    "hero.caption": "ನೈಜ ಸವಾರರು, ಸಾಮೂಹಿಕ ಬಲ: ಅಧಿಕೃತ ಶೋರೂಂಗಳಿಂದ ಉತ್ತಮ ಡೀಲ್ ಪಡೆಯಲು ಕರ್ನಾಟಕದ ತಾಲೂಕುಗಳಲ್ಲಿ ಗ್ರಾಮೀಣ ಖರೀದಿದಾರರನ್ನು ಜೊಡೋ ಒಟ್ಟುಗೂಡಿಸುತ್ತದೆ.",
 
     // Section: Find buyers near your village
     "clusters.title": "ನಿಮ್ಮ ಊರಿನ ಹತ್ತಿರದ ಖರೀದಿದಾರರನ್ನು ಹುಡುಕಿ",
     "clusters.subtitle": "ಹತ್ತಿರದ ಹಳ್ಳಿಗಳ ದ್ವಿಚಕ್ರ ವಾಹನ ಖರೀದಿದಾರರು ಒಟ್ಟಾಗಿ ಸ್ಥಳೀಯ ಕ್ಲಸ್ಟರ್ ರಚಿಸಿ, ಅಧಿಕೃತ ಶೋರೂಂಗಳಿಂದ ಸಾಮೂಹಿಕ ಪ್ರಯೋಜನಗಳನ್ನು ಪಡೆದುಕೊಳ್ಳುತ್ತಾರೆ.",
-    "clusters.badge": "ಸ್ಥಳೀಯ ಬೇಡಿಕೆಯ ಪೂಲ್‌ಗಳು",
     "cluster.c1.name": "ರಾಮನಗರ – ಚನ್ನಪಟ್ಟಣ ಕ್ಲಸ್ಟರ್",
     "cluster.c1.villages": "ಬಿದದಿ, ಹಾರೋಹಳ್ಳಿ, ಕೈಲಾಂಚ, ವಿರೂಪಾಕ್ಷಿಪುರ ಹಾಗೂ ಸುತ್ತಮುತ್ತಲಿನ ಹಳ್ಳಿಗಳು",
     "cluster.c1.models": "ಹೆಚ್ಚಿನ ಬೇಡಿಕೆ: ರಾಯಲ್ ಎನ್‌ಫೀಲ್ಡ್ ಹಂಟರ್ 350, ಟಿವಿಎಸ್ ಅಪಾಚೆ 160",
@@ -273,19 +264,18 @@ const TRANSLATIONS = {
     "filter.motorcycle": "ಮೋಟರ್‌ಸೈಕಲ್‌ಗಳು",
     "filter.scooter": "ಸ್ಕೂಟರ್‌ಗಳು",
     "filter.electric": "ಎಲೆಕ್ಟ್ರಿಕ್ ಇವಿ",
-    "card.targetPrefix": "ಗುಂಪಿನ ಗುರಿ: ",
-    "card.progressLabel": "ಮಾದರಿ ಕ್ಲಸ್ಟರ್ ಪ್ರಗತಿ",
-    "card.activeBatch": "ಸಕ್ರಿಯ ಬ್ಯಾಚ್",
+    "card.activeBatch": "ಸಕ್ರಿಯ ಕ್ಲಸ್ಟರ್",
+    "card.batchStatus": "ಗುಂಪು ಆಫರ್‌ಗಾಗಿ ಸಕ್ರಿಯ",
+    "card.demandNote": "ಮುಂದಿನ ಡೀಲರ್ ಮಾತುಕತೆಗಾಗಿ ಹತ್ತಿರದ ಹಳ್ಳಿಗಳ ಖರೀದಿದಾರರು ಒಂದಾಗುತ್ತಿದ್ದಾರೆ",
     "card.benefitLabel": "ಅಂದಾಜು ಗುಂಪು ಪ್ರಯೋಜನ",
     "card.viewDeal": "ಗುಂಪು ವಿವರ ನೋಡಿ",
-    "card.disclaimer": "*ನೈಜತೆಯ ಟಿಪ್ಪಣಿ: ಇಲ್ಲಿ ತೋರಿಸಲಾದ ಖರೀದಿದಾರರ ಸಂಖ್ಯೆ ಮತ್ತು ಪ್ಯಾಕೇಜ್ ಮೌಲ್ಯಗಳು ಸಕ್ರಿಯ ಕ್ಲಸ್ಟರ್‌ಗಳ ಮಾದರಿ ಉದಾಹರಣೆಗಳಾಗಿವೆ. ಅಂತಿಮ ಆಫರ್‌ಗಳನ್ನು ದೃಢಪಡಿಸಿದ ಗುಂಪಿನ ಗಾತ್ರದ ಆಧಾರದ ಮೇಲೆ ಅಧಿಕೃತ ಡೀಲರ್‌ಶಿಪ್‌ಗಳೊಂದಿಗೆ ನೇರವಾಗಿ ತೀರ್ಮಾನಿಸಲಾಗುತ್ತದೆ.",
+    "card.disclaimer": "*ಮಾದರಿ ಮಾಹಿತಿ. ಗುಂಪು ರಚನೆ ಮತ್ತು ಅಂತಿಮ ಡೀಲರ್ ಆಫರ್‌ಗಳು ಪ್ರತಿ ತಾಲೂಕಿನ ಖರೀದಿದಾರರ ಸಂಖ್ಯೆಯನ್ನು ಆಧರಿಸಿರುತ್ತವೆ ಮತ್ತು ನೇರವಾಗಿ ಅಧಿಕೃತ ಡೀಲರ್‌ಶಿಪ್‌ಗಳಿಂದ ಒದಗಿಸಲಾಗುತ್ತದೆ.",
 
     // Specific Vehicles
     "card.hunter.brand": "ರಾಯಲ್ ಎನ್‌ಫೀಲ್ಡ್",
     "card.hunter.model": "ಹಂಟರ್ 350",
     "card.hunter.cluster": "ರಾಮನಗರ ಕ್ಲಸ್ಟರ್",
     "card.hunter.buyers": "18 ಆಸಕ್ತ ಖರೀದಿದಾರರು",
-    "card.hunter.target": "ಗುರಿ: 25",
     "card.hunter.val": "ಅಂದಾಜು ₹8,500 – ₹10,500 ಮೌಲ್ಯ",
     "card.hunter.note": "ಮಾತುಕತೆಯ ಪ್ಯಾಕೇಜ್: ಕ್ರ್ಯಾಶ್ ಗಾರ್ಡ್, ಪಿಲಿಯನ್ ಬ್ಯಾಕ್‌ರೆಸ್ಟ್ & ಹೆಲ್ಮೆಟ್",
 
@@ -293,7 +283,6 @@ const TRANSLATIONS = {
     "card.apache.model": "ಅಪಾಚೆ ಆರ್‌ಟಿಆರ್ 160",
     "card.apache.cluster": "ದೊಡ್ಡಬಳ್ಳಾಪುರ ಕ್ಲಸ್ಟರ್",
     "card.apache.buyers": "16 ಆಸಕ್ತ ಖರೀದಿದಾರರು",
-    "card.apache.target": "ಗುರಿ: 20",
     "card.apache.val": "ಅಂದಾಜು ₹6,500 – ₹8,000 ಮೌಲ್ಯ",
     "card.apache.note": "ಮಾತುಕತೆಯ ಪ್ಯಾಕೇಜ್: ವಿಸ್ತೃತ ವಾರಂಟಿ & ಐಎಸ್‌ಐ ಹೆಲ್ಮೆಟ್",
 
@@ -301,7 +290,6 @@ const TRANSLATIONS = {
     "card.activa.model": "ಆಕ್ಟಿವಾ 125",
     "card.activa.cluster": "ನೆಲಮಂಗಲ ಕ್ಲಸ್ಟರ್",
     "card.activa.buyers": "22 ಆಸಕ್ತ ಖರೀದಿದಾರರು",
-    "card.activa.target": "ಗುರಿ: 30",
     "card.activa.val": "ಅಂದಾಜು ₹5,500 – ₹7,200 ಮೌಲ್ಯ",
     "card.activa.note": "ಮಾತುಕತೆಯ ಪ್ಯಾಕೇಜ್: ಸಂಪೂರ್ಣ ರಕ್ಷಣಾ ಗಾರ್ಡ್ ಸೆಟ್ & ಮ್ಯಾಟ್",
 
@@ -309,7 +297,6 @@ const TRANSLATIONS = {
     "card.yamaha.model": "ಯಮಹಾ ಆರ್‌15",
     "card.yamaha.cluster": "ಹೊಸಕೋಟೆ ಕ್ಲಸ್ಟರ್",
     "card.yamaha.buyers": "14 ಆಸಕ್ತ ಖರೀದಿದಾರರು",
-    "card.yamaha.target": "ಗುರಿ: 20",
     "card.yamaha.val": "ಅಂದಾಜು ₹9,000 – ₹11,500 ಮೌಲ್ಯ",
     "card.yamaha.note": "ಮಾತುಕತೆಯ ಪ್ಯಾಕೇಜ್: ರೈಡಿಂಗ್ ಗೇರ್ ವೋಚರ್ & ವಿಮಾ ಸಬ್ಸಿಡಿ",
 
@@ -317,7 +304,6 @@ const TRANSLATIONS = {
     "card.ather.model": "ಏಥರ್ ರಿಜ್ತಾ",
     "card.ather.cluster": "ಹೊಸಕೋಟೆ & ಮಾಲೂರು",
     "card.ather.buyers": "19 ಆಸಕ್ತ ಖರೀದಿದಾರರು",
-    "card.ather.target": "ಗುರಿ: 25",
     "card.ather.val": "ಅಂದಾಜು ₹11,000 – ₹14,000 ಮೌಲ್ಯ",
     "card.ather.note": "ಮಾತುಕತೆಯ ಪ್ಯಾಕೇಜ್: ಡ್ಯುಯೊ ಫಾಸ್ಟ್ ಚಾರ್ಜರ್ & ಪ್ರೊ ಪ್ಯಾಕ್",
 
@@ -325,7 +311,6 @@ const TRANSLATIONS = {
     "card.access.model": "ಸುಜುಕಿ ಆಕ್ಸೆಸ್ 125",
     "card.access.cluster": "ನೆಲಮಂಗಲ & ತುಮಕೂರು",
     "card.access.buyers": "17 ಆಸಕ್ತ ಖರೀದಿದಾರರು",
-    "card.access.target": "ಗುರಿ: 25",
     "card.access.val": "ಅಂದಾಜು ₹5,800 – ₹7,000 ಮೌಲ್ಯ",
     "card.access.note": "ಮಾತುಕತೆಯ ಪ್ಯಾಕೇಜ್: ಕ್ರೋಮ್ ಕಿಟ್, ಫುಟ್‌ಬೋರ್ಡ್ ಮ್ಯಾಟ್ & ರೋಡ್‌ಸೈಡ್ ಅಸಿಸ್ಟ್",
 
@@ -341,7 +326,6 @@ const TRANSLATIONS = {
     "assist.feat4": "ರಾಷ್ಟ್ರೀಕೃತ ಮತ್ತು ಗ್ರಾಮೀಣ ಬ್ಯಾಂಕ್ ಲೋನ್ ದಾಖಲಾತಿಗಳಿಗೆ ನೆರವು",
 
     // Call to Action
-    "cta.badge": "ಗ್ರಾಮೀಣ ಕರ್ನಾಟಕದ ಖರೀದಿ ಜಾಲಕ್ಕೆ ಸೇರಿ",
     "cta.title": "ನಿಮ್ಮ ಸಮುದಾಯದೊಂದಿಗೆ ಹೊಸ ಬೈಕ್ ಖರೀದಿಸಲು ಸಿದ್ಧರಿದ್ದೀರಾ?",
     "cta.desc": "ನಿಮಗೆ ಬೇಕಾದ ಬೈಕ್ ಅಥವಾ ಸ್ಕೂಟರ್ ತಿಳಿಸಿ. ನಾವು ನಿಮ್ಮ ತಾಲೂಕಿನ ಸಕ್ರಿಯ ಖರೀದಿದಾರರೊಂದಿಗೆ ನಿಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸುತ್ತೇವೆ ಮತ್ತು ಡೀಲರ್‌ಶಿಪ್ ಆಫರ್ ಸಿದ್ಧವಾದ ತಕ್ಷಣ ಮಾಹಿತಿ ನೀಡುತ್ತೇವೆ.",
     "cta.btn": "ನಿಮ್ಮ ಸ್ಥಳೀಯ ಖರೀದಿದಾರರ ಗುಂಪು ಸೇರಿ",
