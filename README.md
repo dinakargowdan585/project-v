@@ -20,13 +20,17 @@ The platform is exclusively for:
 
 ## 🎨 Design System
 
-Inspired by premium automotive and fintech websites:
-- **Deep Navy:** `#101B35`
-- **Bright Green:** `#20C779`
+Inspired by premium automotive and fintech platforms with the **Forest Green + Sage** brand identity:
+- **Primary Forest Green:** `#12372A`
+- **Deep Green:** `#1F513D`
+- **Fresh Green:** `#3FA66B`
+- **Sage:** `#A6D8B5`
+- **Warm Cream:** `#F4F1E8`
 - **White:** `#FFFFFF`
-- **Light Grey:** `#F5F7FA`
+- **Main Text:** `#173126`
+- **Footer:** `#102B21`
 - **Typography:** Plus Jakarta Sans
-- **Styling:** Clean typography, rounded cards, subtle shadows, beautiful vehicle photography, modern icons, smooth hover effects, responsive layout for desktop and mobile.
+- **Styling:** Clean typography, rounded cards, subtle green borders, warm cream page backdrop, modern icons, smooth hover effects, responsive layout for desktop and mobile.
 
 ---
 
