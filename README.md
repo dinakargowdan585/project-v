@@ -18,7 +18,7 @@ The platform is exclusively for:
 
 ---
 
-## 🎨 Design System
+## 🎨 Design System & Bilingual Support
 
 Inspired by premium automotive and fintech platforms with the **Forest Green + Sage** brand identity:
 - **Primary Forest Green:** `#12372A`
@@ -29,7 +29,8 @@ Inspired by premium automotive and fintech platforms with the **Forest Green + S
 - **White:** `#FFFFFF`
 - **Main Text:** `#173126`
 - **Footer:** `#102B21`
-- **Typography:** Plus Jakarta Sans
+- **Typography:** Plus Jakarta Sans & Noto Sans Kannada (optimized line-height and fallbacks)
+- **Bilingual Switcher:** Fully integrated toggle (`English | ಕನ್ನಡ`) in top navbar and mobile drawer with instant DOM re-translation and `localStorage` persistence.
 - **Styling:** Clean typography, rounded cards, subtle green borders, warm cream page backdrop, modern icons, smooth hover effects, responsive layout for desktop and mobile.
 
 ---

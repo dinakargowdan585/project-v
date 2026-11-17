@@ -9,10 +9,10 @@
   <!-- Favicon SVG -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='10' fill='%2312372A'/><path d='M12 28C12 21 16 14 24 14M16 28C16 23 20 18 28 18' stroke='%233FA66B' stroke-width='3.5' stroke-linecap='round'/><circle cx='28' cy='28' r='4' fill='%23A6D8B5'/><circle cx='14' cy='28' r='4' fill='%23FFFFFF'/></svg>">
 
-  <!-- Google Fonts: Plus Jakarta Sans -->
+  <!-- Google Fonts: Plus Jakarta Sans & Noto Sans Kannada -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Core Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
@@ -20,7 +20,7 @@
 <body>
 
   <!-- ========================================================================
-       2. Navigation Bar (Clean & Sticky)
+       2. Navigation Bar (Clean & Sticky with Bilingual Switcher)
        ======================================================================== -->
   <header class="site-header" id="header">
     <div class="container nav-wrapper">
@@ -37,24 +37,31 @@
         </div>
         <div class="brand-text-block">
           <span class="brand-name">JODO<span>.</span></span>
-          <span class="brand-subline">Ride For Less</span>
+          <span class="brand-subline" data-i18n="brand.tagline">Ride For Less</span>
         </div>
       </a>
 
       <!-- Navigation Links -->
       <nav aria-label="Main Navigation">
         <ul class="nav-links">
-          <li><a href="#hero" class="nav-link active">Home</a></li>
-          <li><a href="#explore" class="nav-link">Explore Bikes</a></li>
-          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
-          <li><a href="#why-jodo" class="nav-link">About Us</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#hero" class="nav-link active" data-i18n="nav.home">Home</a></li>
+          <li><a href="#explore" class="nav-link" data-i18n="nav.explore">Explore Bikes</a></li>
+          <li><a href="#how-it-works" class="nav-link" data-i18n="nav.how">How It Works</a></li>
+          <li><a href="#why-jodo" class="nav-link" data-i18n="nav.about">About Us</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </nav>
 
       <!-- Nav Action -->
       <div class="nav-actions">
-        <a href="#explore" class="btn btn-primary" data-open-modal data-vehicle="hunter-350">
+        <!-- Language Switcher: English | ಕನ್ನಡ -->
+        <div class="lang-switcher" role="group" aria-label="Language selection">
+          <button type="button" class="lang-btn active" data-lang-btn="en" aria-label="Switch to English" aria-pressed="true">English</button>
+          <span class="lang-divider">|</span>
+          <button type="button" class="lang-btn" data-lang-btn="kn" aria-label="ಕನ್ನಡಕ್ಕೆ ಬದಲಿಸಿ" aria-pressed="false">ಕನ್ನಡ</button>
+        </div>
+
+        <a href="#explore" class="btn btn-primary nav-join-btn" data-open-modal data-vehicle="hunter-350" data-i18n="nav.join">
           Join JODO
         </a>
 
@@ -72,14 +79,22 @@
 
     <!-- Mobile Drawer Menu -->
     <div class="mobile-drawer" id="mobile-drawer">
+      <div class="mobile-drawer-lang">
+        <span class="drawer-lang-label" data-i18n="lang.label">Language / ಭಾಷೆ:</span>
+        <div class="lang-switcher" role="group" aria-label="Mobile language selection">
+          <button type="button" class="lang-btn active" data-lang-btn="en" aria-label="Switch to English" aria-pressed="true">English</button>
+          <span class="lang-divider">|</span>
+          <button type="button" class="lang-btn" data-lang-btn="kn" aria-label="ಕನ್ನಡಕ್ಕೆ ಬದಲಿಸಿ" aria-pressed="false">ಕನ್ನಡ</button>
+        </div>
+      </div>
       <ul class="mobile-nav-links">
-        <li><a href="#hero" class="mobile-nav-link">Home</a></li>
-        <li><a href="#explore" class="mobile-nav-link">Explore Bikes</a></li>
-        <li><a href="#how-it-works" class="mobile-nav-link">How It Works</a></li>
-        <li><a href="#why-jodo" class="mobile-nav-link">About Us</a></li>
-        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        <li><a href="#hero" class="mobile-nav-link" data-i18n="nav.home">Home</a></li>
+        <li><a href="#explore" class="mobile-nav-link" data-i18n="nav.explore">Explore Bikes</a></li>
+        <li><a href="#how-it-works" class="mobile-nav-link" data-i18n="nav.how">How It Works</a></li>
+        <li><a href="#why-jodo" class="mobile-nav-link" data-i18n="nav.about">About Us</a></li>
+        <li><a href="#contact" class="mobile-nav-link" data-i18n="nav.contact">Contact</a></li>
       </ul>
-      <button class="btn btn-primary" style="width: 100%;" data-open-modal data-vehicle="hunter-350">
+      <button class="btn btn-primary" style="width: 100%;" data-open-modal data-vehicle="hunter-350" data-i18n="nav.join">
         Join JODO
       </button>
     </div>
@@ -95,24 +110,24 @@
         <!-- Left Hero Content -->
         <div class="hero-content">
           <h1 class="hero-title">
-            Your Next Ride. <br>
-            A Better Deal. <br>
-            <span class="highlight">Together.</span>
+            <span data-i18n="hero.title1">Your Next Ride.</span> <br>
+            <span data-i18n="hero.title2">A Better Deal.</span> <br>
+            <span class="highlight" data-i18n="hero.together">Together.</span>
           </h1>
 
-          <p class="hero-description">
+          <p class="hero-description" data-i18n="hero.desc">
             Why buy alone when you can buy together? Join other bike and scooter buyers, unlock exclusive group offers, and save more on your next ride.
           </p>
 
           <div class="hero-cta-group">
             <a href="#explore" class="btn btn-primary">
-              <span>Explore Group Deals</span>
+              <span data-i18n="hero.ctaExplore">Explore Group Deals</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
             </a>
-            <button type="button" class="btn btn-outline-white" data-open-modal data-vehicle="hunter-350">
+            <button type="button" class="btn btn-outline-white" data-open-modal data-vehicle="hunter-350" data-i18n="hero.ctaCommunity">
               Join the JODO Community
             </button>
           </div>
@@ -129,8 +144,8 @@
                 </svg>
               </div>
               <div>
-                <div class="trust-item-title">Group Buying Power</div>
-                <div class="trust-item-sub">Strength in numbers</div>
+                <div class="trust-item-title" data-i18n="hero.trust1Title">Group Buying Power</div>
+                <div class="trust-item-sub" data-i18n="hero.trust1Sub">Strength in numbers</div>
               </div>
             </div>
 
@@ -142,8 +157,8 @@
                 </svg>
               </div>
               <div>
-                <div class="trust-item-title">Exclusive Dealer Offers</div>
-                <div class="trust-item-sub">Authorized networks</div>
+                <div class="trust-item-title" data-i18n="hero.trust2Title">Exclusive Dealer Offers</div>
+                <div class="trust-item-sub" data-i18n="hero.trust2Sub">Authorized networks</div>
               </div>
             </div>
 
@@ -155,8 +170,8 @@
                 </svg>
               </div>
               <div>
-                <div class="trust-item-title">Free Registration</div>
-                <div class="trust-item-sub">Zero risk to join</div>
+                <div class="trust-item-title" data-i18n="hero.trust3Title">Free Registration</div>
+                <div class="trust-item-sub" data-i18n="hero.trust3Sub">Zero risk to join</div>
               </div>
             </div>
           </div>
@@ -173,20 +188,20 @@
             <div class="floating-card card-top">
               <div class="floating-badge">
                 <span class="live-pulse"></span>
-                <span>Bengaluru Hub</span>
+                <span data-i18n="hero.hub">Bengaluru Hub</span>
               </div>
-              <div class="floating-title">48 Buyers Waiting</div>
-              <div class="floating-sub">Royal Enfield Hunter 350</div>
+              <div class="floating-title" data-i18n="hero.waiting">48 Buyers Waiting</div>
+              <div class="floating-sub" data-i18n="hero.hunterModel">Royal Enfield Hunter 350</div>
             </div>
 
             <!-- Floating Status Card 2 -->
             <div class="floating-card card-bottom">
               <div class="floating-badge">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline></svg>
-                <span>Group Buying Power</span>
+                <span data-i18n="hero.trust1Title">Group Buying Power</span>
               </div>
-              <div class="floating-title">Better Dealership Quotes</div>
-              <div class="floating-sub">Negotiated via collective demand</div>
+              <div class="floating-title" data-i18n="hero.quoteTitle">Better Dealership Quotes</div>
+              <div class="floating-sub" data-i18n="hero.quoteSub">Negotiated via collective demand</div>
             </div>
 
           </div>
@@ -202,18 +217,18 @@
       <div class="container">
         
         <div class="text-center">
-          <h2 class="section-title">Featured Two-Wheeler Campaigns</h2>
-          <p class="section-subtitle">
+          <h2 class="section-title" data-i18n="campaigns.title">Featured Two-Wheeler Campaigns</h2>
+          <p class="section-subtitle" data-i18n="campaigns.subtitle">
             Explore ongoing groups in Bengaluru. Join interested buyers of your dream ride to unlock better group offers from authorized dealerships.
           </p>
         </div>
 
         <!-- Category Filters -->
         <div class="filter-container" role="tablist" aria-label="Vehicle categories">
-          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Two-Wheelers</button>
-          <button class="filter-btn" data-filter="motorcycle" role="tab" aria-selected="false">Motorcycles</button>
-          <button class="filter-btn" data-filter="scooter" role="tab" aria-selected="false">Scooters</button>
-          <button class="filter-btn" data-filter="electric" role="tab" aria-selected="false">Electric EV</button>
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" data-i18n="filter.all">All Two-Wheelers</button>
+          <button class="filter-btn" data-filter="motorcycle" role="tab" aria-selected="false" data-i18n="filter.motorcycle">Motorcycles</button>
+          <button class="filter-btn" data-filter="scooter" role="tab" aria-selected="false" data-i18n="filter.scooter">Scooters</button>
+          <button class="filter-btn" data-filter="electric" role="tab" aria-selected="false" data-i18n="filter.electric">Electric EV</button>
         </div>
 
         <!-- 6 Vehicle Cards Grid -->
@@ -226,45 +241,45 @@
               <div class="card-top-badges">
                 <span class="badge-city">
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                  Bengaluru
+                  <span data-i18n="city.bengaluru">Bengaluru</span>
                 </span>
               </div>
             </div>
 
             <div class="card-body">
               <div class="card-category-row">
-                <span class="vehicle-brand">Royal Enfield</span>
-                <span class="vehicle-category">Motorcycle</span>
+                <span class="vehicle-brand" data-i18n="card.hunter.brand">Royal Enfield</span>
+                <span class="vehicle-category" data-i18n="cat.motorcycle">Motorcycle</span>
               </div>
-              <h3 class="vehicle-name">Hunter 350</h3>
+              <h3 class="vehicle-name" data-i18n="card.hunter.model">Hunter 350</h3>
 
               <!-- Example Interested Buyer Count -->
               <div class="group-progress-box">
                 <div class="progress-header">
                   <span class="buyer-count">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
-                    <strong>48 Interested Buyers</strong>
+                    <strong data-i18n="card.hunter.buyers">48 Interested Buyers</strong>
                   </span>
-                  <span>Target: 60</span>
+                  <span data-i18n="card.hunter.target">Target: 60</span>
                 </div>
                 <div class="progress-bar-track">
                   <div class="progress-bar-fill" style="width: 80%;"></div>
                 </div>
                 <div class="progress-footer">
-                  <span>Illustrative Group Progress</span>
-                  <span class="text-green">Active Batch</span>
+                  <span data-i18n="card.progressLabel">Illustrative Group Progress</span>
+                  <span class="text-green" data-i18n="card.activeBatch">Active Batch</span>
                 </div>
               </div>
 
               <!-- Placeholder Offer -->
               <div class="deal-highlight-box">
-                <div class="deal-highlight-label">Target Group Benefit (Placeholder)</div>
-                <div class="deal-highlight-value">Up to ₹9,500*</div>
-                <div class="deal-highlight-note">Accessories bundle & dealership benefits</div>
+                <div class="deal-highlight-label" data-i18n="card.benefitLabel">Target Group Benefit (Placeholder)</div>
+                <div class="deal-highlight-value" data-i18n="card.hunter.val">Up to ₹9,500*</div>
+                <div class="deal-highlight-note" data-i18n="card.hunter.note">Accessories bundle & dealership benefits</div>
               </div>
 
               <div class="card-actions">
-                <button type="button" class="btn btn-card" data-open-modal data-vehicle="hunter-350">
+                <button type="button" class="btn btn-card" data-open-modal data-vehicle="hunter-350" data-i18n="card.viewDeal">
                   View Group Deal
                 </button>
               </div>
@@ -279,45 +294,45 @@
               <div class="card-top-badges">
                 <span class="badge-city">
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                  Bengaluru
+                  <span data-i18n="city.bengaluru">Bengaluru</span>
                 </span>
               </div>
             </div>
 
             <div class="card-body">
               <div class="card-category-row">
-                <span class="vehicle-brand">TVS</span>
-                <span class="vehicle-category">Motorcycle</span>
+                <span class="vehicle-brand" data-i18n="card.apache.brand">TVS</span>
+                <span class="vehicle-category" data-i18n="cat.motorcycle">Motorcycle</span>
               </div>
-              <h3 class="vehicle-name">Apache RTR 160</h3>
+              <h3 class="vehicle-name" data-i18n="card.apache.model">Apache RTR 160</h3>
 
               <!-- Example Interested Buyer Count -->
               <div class="group-progress-box">
                 <div class="progress-header">
                   <span class="buyer-count">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
-                    <strong>36 Interested Buyers</strong>
+                    <strong data-i18n="card.apache.buyers">36 Interested Buyers</strong>
                   </span>
-                  <span>Target: 50</span>
+                  <span data-i18n="card.apache.target">Target: 50</span>
                 </div>
                 <div class="progress-bar-track">
                   <div class="progress-bar-fill" style="width: 72%;"></div>
                 </div>
                 <div class="progress-footer">
-                  <span>Illustrative Group Progress</span>
-                  <span class="text-green">Active Batch</span>
+                  <span data-i18n="card.progressLabel">Illustrative Group Progress</span>
+                  <span class="text-green" data-i18n="card.activeBatch">Active Batch</span>
                 </div>
               </div>
 
               <!-- Placeholder Offer -->
               <div class="deal-highlight-box">
-                <div class="deal-highlight-label">Target Group Benefit (Placeholder)</div>
-                <div class="deal-highlight-value">Up to ₹7,200*</div>
-                <div class="deal-highlight-note">Helmet & extended warranty package</div>
+                <div class="deal-highlight-label" data-i18n="card.benefitLabel">Target Group Benefit (Placeholder)</div>
+                <div class="deal-highlight-value" data-i18n="card.apache.val">Up to ₹7,200*</div>
+                <div class="deal-highlight-note" data-i18n="card.apache.note">Helmet & extended warranty package</div>
               </div>
 
               <div class="card-actions">
-                <button type="button" class="btn btn-card" data-open-modal data-vehicle="apache-rtr-160">
+                <button type="button" class="btn btn-card" data-open-modal data-vehicle="apache-rtr-160" data-i18n="card.viewDeal">
                   View Group Deal
                 </button>
               </div>
@@ -332,45 +347,45 @@
               <div class="card-top-badges">
                 <span class="badge-city">
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                  Bengaluru
+                  <span data-i18n="city.bengaluru">Bengaluru</span>
                 </span>
               </div>
             </div>
 
             <div class="card-body">
               <div class="card-category-row">
-                <span class="vehicle-brand">Honda</span>
-                <span class="vehicle-category">Scooter</span>
+                <span class="vehicle-brand" data-i18n="card.activa.brand">Honda</span>
+                <span class="vehicle-category" data-i18n="cat.scooter">Scooter</span>
               </div>
-              <h3 class="vehicle-name">Activa 125</h3>
+              <h3 class="vehicle-name" data-i18n="card.activa.model">Activa 125</h3>
 
               <!-- Example Interested Buyer Count -->
               <div class="group-progress-box">
                 <div class="progress-header">
                   <span class="buyer-count">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
-                    <strong>52 Interested Buyers</strong>
+                    <strong data-i18n="card.activa.buyers">52 Interested Buyers</strong>
                   </span>
-                  <span>Target: 60</span>
+                  <span data-i18n="card.activa.target">Target: 60</span>
                 </div>
                 <div class="progress-bar-track">
                   <div class="progress-bar-fill" style="width: 86%;"></div>
                 </div>
                 <div class="progress-footer">
-                  <span>Illustrative Group Progress</span>
-                  <span class="text-green">Active Batch</span>
+                  <span data-i18n="card.progressLabel">Illustrative Group Progress</span>
+                  <span class="text-green" data-i18n="card.activeBatch">Active Batch</span>
                 </div>
               </div>
 
               <!-- Placeholder Offer -->
               <div class="deal-highlight-box">
-                <div class="deal-highlight-label">Target Group Benefit (Placeholder)</div>
-                <div class="deal-highlight-value">Up to ₹6,800*</div>
-                <div class="deal-highlight-note">Protection accessories & service package</div>
+                <div class="deal-highlight-label" data-i18n="card.benefitLabel">Target Group Benefit (Placeholder)</div>
+                <div class="deal-highlight-value" data-i18n="card.activa.val">Up to ₹6,800*</div>
+                <div class="deal-highlight-note" data-i18n="card.activa.note">Protection accessories & service package</div>
               </div>
 
               <div class="card-actions">
-                <button type="button" class="btn btn-card" data-open-modal data-vehicle="activa-125">
+                <button type="button" class="btn btn-card" data-open-modal data-vehicle="activa-125" data-i18n="card.viewDeal">
                   View Group Deal
                 </button>
               </div>
@@ -385,45 +400,45 @@
               <div class="card-top-badges">
                 <span class="badge-city">
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                  Bengaluru
+                  <span data-i18n="city.bengaluru">Bengaluru</span>
                 </span>
               </div>
             </div>
 
             <div class="card-body">
               <div class="card-category-row">
-                <span class="vehicle-brand">Yamaha</span>
-                <span class="vehicle-category">Motorcycle</span>
+                <span class="vehicle-brand" data-i18n="card.yamaha.brand">Yamaha</span>
+                <span class="vehicle-category" data-i18n="cat.motorcycle">Motorcycle</span>
               </div>
-              <h3 class="vehicle-name">Yamaha R15</h3>
+              <h3 class="vehicle-name" data-i18n="card.yamaha.model">Yamaha R15</h3>
 
               <!-- Example Interested Buyer Count -->
               <div class="group-progress-box">
                 <div class="progress-header">
                   <span class="buyer-count">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
-                    <strong>29 Interested Buyers</strong>
+                    <strong data-i18n="card.yamaha.buyers">29 Interested Buyers</strong>
                   </span>
-                  <span>Target: 40</span>
+                  <span data-i18n="card.yamaha.target">Target: 40</span>
                 </div>
                 <div class="progress-bar-track">
                   <div class="progress-bar-fill" style="width: 72%;"></div>
                 </div>
                 <div class="progress-footer">
-                  <span>Illustrative Group Progress</span>
-                  <span class="text-green">Active Batch</span>
+                  <span data-i18n="card.progressLabel">Illustrative Group Progress</span>
+                  <span class="text-green" data-i18n="card.activeBatch">Active Batch</span>
                 </div>
               </div>
 
               <!-- Placeholder Offer -->
               <div class="deal-highlight-box">
-                <div class="deal-highlight-label">Target Group Benefit (Placeholder)</div>
-                <div class="deal-highlight-value">Up to ₹11,000*</div>
-                <div class="deal-highlight-note">Performance gear voucher & insurance subsidy</div>
+                <div class="deal-highlight-label" data-i18n="card.benefitLabel">Target Group Benefit (Placeholder)</div>
+                <div class="deal-highlight-value" data-i18n="card.yamaha.val">Up to ₹11,000*</div>
+                <div class="deal-highlight-note" data-i18n="card.yamaha.note">Performance gear voucher & insurance subsidy</div>
               </div>
 
               <div class="card-actions">
-                <button type="button" class="btn btn-card" data-open-modal data-vehicle="yamaha-r15">
+                <button type="button" class="btn btn-card" data-open-modal data-vehicle="yamaha-r15" data-i18n="card.viewDeal">
                   View Group Deal
                 </button>
               </div>
@@ -437,45 +452,45 @@
               <div class="card-top-badges">
                 <span class="badge-city">
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                  Bengaluru
+                  <span data-i18n="city.bengaluru">Bengaluru</span>
                 </span>
               </div>
             </div>
 
             <div class="card-body">
               <div class="card-category-row">
-                <span class="vehicle-brand">Ather</span>
-                <span class="vehicle-category">Electric Two-Wheeler</span>
+                <span class="vehicle-brand" data-i18n="card.ather.brand">Ather</span>
+                <span class="vehicle-category" data-i18n="cat.electric">Electric Two-Wheeler</span>
               </div>
-              <h3 class="vehicle-name">Ather Rizta</h3>
+              <h3 class="vehicle-name" data-i18n="card.ather.model">Ather Rizta</h3>
 
               <!-- Example Interested Buyer Count -->
               <div class="group-progress-box">
                 <div class="progress-header">
                   <span class="buyer-count">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
-                    <strong>64 Interested Buyers</strong>
+                    <strong data-i18n="card.ather.buyers">64 Interested Buyers</strong>
                   </span>
-                  <span>Target: 75</span>
+                  <span data-i18n="card.ather.target">Target: 75</span>
                 </div>
                 <div class="progress-bar-track">
                   <div class="progress-bar-fill" style="width: 85%;"></div>
                 </div>
                 <div class="progress-footer">
-                  <span>Illustrative Group Progress</span>
-                  <span class="text-green">Active Batch</span>
+                  <span data-i18n="card.progressLabel">Illustrative Group Progress</span>
+                  <span class="text-green" data-i18n="card.activeBatch">Active Batch</span>
                 </div>
               </div>
 
               <!-- Placeholder Offer -->
               <div class="deal-highlight-box">
-                <div class="deal-highlight-label">Target Group Benefit (Placeholder)</div>
-                <div class="deal-highlight-value">Up to ₹13,500*</div>
-                <div class="deal-highlight-note">Ather Duo fast charger & Pro pack bundle</div>
+                <div class="deal-highlight-label" data-i18n="card.benefitLabel">Target Group Benefit (Placeholder)</div>
+                <div class="deal-highlight-value" data-i18n="card.ather.val">Up to ₹13,500*</div>
+                <div class="deal-highlight-note" data-i18n="card.ather.note">Ather Duo fast charger & Pro pack bundle</div>
               </div>
 
               <div class="card-actions">
-                <button type="button" class="btn btn-card" data-open-modal data-vehicle="ather-rizta">
+                <button type="button" class="btn btn-card" data-open-modal data-vehicle="ather-rizta" data-i18n="card.viewDeal">
                   View Group Deal
                 </button>
               </div>
@@ -490,45 +505,45 @@
               <div class="card-top-badges">
                 <span class="badge-city">
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                  Bengaluru
+                  <span data-i18n="city.bengaluru">Bengaluru</span>
                 </span>
               </div>
             </div>
 
             <div class="card-body">
               <div class="card-category-row">
-                <span class="vehicle-brand">Suzuki</span>
-                <span class="vehicle-category">Scooter</span>
+                <span class="vehicle-brand" data-i18n="card.access.brand">Suzuki</span>
+                <span class="vehicle-category" data-i18n="cat.scooter">Scooter</span>
               </div>
-              <h3 class="vehicle-name">Suzuki Access 125</h3>
+              <h3 class="vehicle-name" data-i18n="card.access.model">Suzuki Access 125</h3>
 
               <!-- Example Interested Buyer Count -->
               <div class="group-progress-box">
                 <div class="progress-header">
                   <span class="buyer-count">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
-                    <strong>41 Interested Buyers</strong>
+                    <strong data-i18n="card.access.buyers">41 Interested Buyers</strong>
                   </span>
-                  <span>Target: 50</span>
+                  <span data-i18n="card.access.target">Target: 50</span>
                 </div>
                 <div class="progress-bar-track">
                   <div class="progress-bar-fill" style="width: 82%;"></div>
                 </div>
                 <div class="progress-footer">
-                  <span>Illustrative Group Progress</span>
-                  <span class="text-green">Active Batch</span>
+                  <span data-i18n="card.progressLabel">Illustrative Group Progress</span>
+                  <span class="text-green" data-i18n="card.activeBatch">Active Batch</span>
                 </div>
               </div>
 
               <!-- Placeholder Offer -->
               <div class="deal-highlight-box">
-                <div class="deal-highlight-label">Target Group Benefit (Placeholder)</div>
-                <div class="deal-highlight-value">Up to ₹6,500*</div>
-                <div class="deal-highlight-note">Chrome accessories & roadside assistance package</div>
+                <div class="deal-highlight-label" data-i18n="card.benefitLabel">Target Group Benefit (Placeholder)</div>
+                <div class="deal-highlight-value" data-i18n="card.access.val">Up to ₹6,500*</div>
+                <div class="deal-highlight-note" data-i18n="card.access.note">Chrome accessories & roadside assistance package</div>
               </div>
 
               <div class="card-actions">
-                <button type="button" class="btn btn-card" data-open-modal data-vehicle="access-125">
+                <button type="button" class="btn btn-card" data-open-modal data-vehicle="access-125" data-i18n="card.viewDeal">
                   View Group Deal
                 </button>
               </div>
@@ -537,7 +552,7 @@
 
         </div>
 
-        <p class="campaign-disclaimer">
+        <p class="campaign-disclaimer" data-i18n="card.disclaimer">
           *Note: Buyer counts and placeholder offers shown are illustrative examples. Discounts and dealer offers are negotiated based on group size and confirmed directly with authorized dealerships upon batch closure.
         </p>
 
@@ -551,8 +566,8 @@
       <div class="container">
         
         <div class="text-center">
-          <h2 class="section-title">How JODO Works</h2>
-          <p class="section-subtitle">
+          <h2 class="section-title" data-i18n="how.title">How JODO Works</h2>
+          <p class="section-subtitle" data-i18n="how.subtitle">
             A simple, transparent process that brings buyers together to unlock better two-wheeler deals.
           </p>
         </div>
@@ -571,8 +586,8 @@
                 <path d="M6 18l5-10h4"></path>
               </svg>
             </div>
-            <h3 class="step-title">Step 1: Choose Your Ride</h3>
-            <p class="step-desc">Select the bike or scooter you want.</p>
+            <h3 class="step-title" data-i18n="how.step1Title">Step 1: Choose Your Ride</h3>
+            <p class="step-desc" data-i18n="how.step1Desc">Select the bike or scooter you want.</p>
           </div>
 
           <!-- Step 2 -->
@@ -586,8 +601,8 @@
                 <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
               </svg>
             </div>
-            <h3 class="step-title">Step 2: Join a Group</h3>
-            <p class="step-desc">Connect with other people interested in the same vehicle.</p>
+            <h3 class="step-title" data-i18n="how.step2Title">Step 2: Join a Group</h3>
+            <p class="step-desc" data-i18n="how.step2Desc">Connect with other people interested in the same vehicle.</p>
           </div>
 
           <!-- Step 3 -->
@@ -600,8 +615,8 @@
                 <line x1="12" y1="17" x2="12" y2="21"></line>
               </svg>
             </div>
-            <h3 class="step-title">Step 3: JODO Negotiates</h3>
-            <p class="step-desc">We approach dealerships to negotiate better group offers.</p>
+            <h3 class="step-title" data-i18n="how.step3Title">Step 3: JODO Negotiates</h3>
+            <p class="step-desc" data-i18n="how.step3Desc">We approach dealerships to negotiate better group offers.</p>
           </div>
 
           <!-- Step 4 -->
@@ -613,8 +628,8 @@
                 <polyline points="22 4 12 14.01 9 11.01"></polyline>
               </svg>
             </div>
-            <h3 class="step-title">Step 4: Get Your Deal</h3>
-            <p class="step-desc">Compare the offer and purchase directly from the dealership.</p>
+            <h3 class="step-title" data-i18n="how.step4Title">Step 4: Get Your Deal</h3>
+            <p class="step-desc" data-i18n="how.step4Desc">Compare the offer and purchase directly from the dealership.</p>
           </div>
 
         </div>
@@ -629,8 +644,8 @@
       <div class="container">
         
         <div class="text-center">
-          <h2 class="section-title">Why Choose JODO?</h2>
-          <p class="section-subtitle">
+          <h2 class="section-title" data-i18n="why.title">Why Choose JODO?</h2>
+          <p class="section-subtitle" data-i18n="why.subtitle">
             A smarter, community-driven way to purchase your two-wheeler in India.
           </p>
         </div>
@@ -645,8 +660,8 @@
                 <polyline points="17 6 23 6 23 12"></polyline>
               </svg>
             </div>
-            <h3 class="feature-title">Better Group Deals</h3>
-            <p class="feature-desc">More interested buyers can create stronger negotiating power.</p>
+            <h3 class="feature-title" data-i18n="why.card1Title">Better Group Deals</h3>
+            <p class="feature-desc" data-i18n="why.card1Desc">More interested buyers can create stronger negotiating power.</p>
           </div>
 
           <div class="feature-card">
@@ -656,8 +671,8 @@
                 <polyline points="12 6 12 12 16 14"></polyline>
               </svg>
             </div>
-            <h3 class="feature-title">Save Time</h3>
-            <p class="feature-desc">We bring dealership offers together in one place.</p>
+            <h3 class="feature-title" data-i18n="why.card2Title">Save Time</h3>
+            <p class="feature-desc" data-i18n="why.card2Desc">We bring dealership offers together in one place.</p>
           </div>
 
           <div class="feature-card">
@@ -667,8 +682,8 @@
                 <polyline points="9 12 11 14 15 10"></polyline>
               </svg>
             </div>
-            <h3 class="feature-title">Trusted Dealerships</h3>
-            <p class="feature-desc">Work with verified and authorized dealerships.</p>
+            <h3 class="feature-title" data-i18n="why.card3Title">Trusted Dealerships</h3>
+            <p class="feature-desc" data-i18n="why.card3Desc">Work with verified and authorized dealerships.</p>
           </div>
 
           <div class="feature-card">
@@ -679,8 +694,8 @@
                 <line x1="12" y1="16" x2="12.01" y2="16"></line>
               </svg>
             </div>
-            <h3 class="feature-title">Free to Join</h3>
-            <p class="feature-desc">Registration is free. An optional ₹99 assistance service can be shown separately, with its benefits explained clearly.</p>
+            <h3 class="feature-title" data-i18n="why.card4Title">Free to Join</h3>
+            <p class="feature-desc" data-i18n="why.card4Desc">Registration is free. An optional ₹99 assistance service can be shown separately, with its benefits explained clearly.</p>
           </div>
 
         </div>
@@ -688,15 +703,15 @@
         <!-- Optional ₹99 Assistance Service (Shown Separately) -->
         <div class="assistance-card">
           <div>
-            <div class="assistance-pill">
-              <span>Optional Service</span> • ₹99 Only
+            <div class="assistance-pill" data-i18n="assist.badge">
+              Optional Service • ₹99 Only
             </div>
-            <h3 class="assistance-title">Optional ₹99 Assistance Service</h3>
-            <p class="assistance-desc">
+            <h3 class="assistance-title" data-i18n="assist.title">Optional ₹99 Assistance Service</h3>
+            <p class="assistance-desc" data-i18n="assist.desc">
               For buyers who would like dedicated support throughout their purchase, our optional ₹99 assistance service provides personalized coordination from test rides to delivery.
             </p>
             <p class="free-guarantee-note">
-              <strong>Note:</strong> Registration and participation in all JODO groups is <strong>100% Free</strong>. This assistance service is completely optional.
+              <strong data-i18n="assist.notePrefix">Note:</strong> <span data-i18n="assist.note">Registration and participation in all JODO groups is 100% Free. This assistance service is completely optional.</span>
             </p>
           </div>
 
@@ -706,25 +721,25 @@
                 <span class="assistance-check">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 </span>
-                <span>Dedicated WhatsApp support specialist</span>
+                <span data-i18n="assist.feat1">Dedicated WhatsApp support specialist</span>
               </li>
               <li class="assistance-feature-item">
                 <span class="assistance-check">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 </span>
-                <span>Doorstep test ride coordination</span>
+                <span data-i18n="assist.feat2">Doorstep test ride coordination</span>
               </li>
               <li class="assistance-feature-item">
                 <span class="assistance-check">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 </span>
-                <span>Paperwork and documentation pre-check</span>
+                <span data-i18n="assist.feat3">Paperwork and documentation pre-check</span>
               </li>
               <li class="assistance-feature-item">
                 <span class="assistance-check">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
                 </span>
-                <span>Priority slot in the active negotiation batch</span>
+                <span data-i18n="assist.feat4">Priority slot in the active negotiation batch</span>
               </li>
             </ul>
           </div>
@@ -740,17 +755,17 @@
       <div class="container">
         <div class="cta-box">
           <h2 class="cta-title">
-            Your Dream Ride Is <br>
-            <span>Better Together.</span>
+            <span data-i18n="cta.title1">Your Dream Ride Is</span> <br>
+            <span data-i18n="cta.title2">Better Together.</span>
           </h2>
 
-          <p class="cta-text">
+          <p class="cta-text" data-i18n="cta.desc">
             Join JODO today and be part of a smarter way to buy two-wheelers.
           </p>
 
           <div>
             <button type="button" class="btn btn-primary" style="font-size: 1.05rem; padding: 16px 36px;" data-open-modal data-vehicle="hunter-350">
-              <span>Join the Group</span>
+              <span data-i18n="cta.btn">Join the Group</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </button>
           </div>
@@ -780,11 +795,11 @@
             </div>
             <div class="brand-text-block">
               <span class="brand-name">JODO<span>.</span></span>
-              <span class="brand-subline">Ride For Less</span>
+              <span class="brand-subline" data-i18n="brand.tagline">Ride For Less</span>
             </div>
           </a>
 
-          <p class="footer-brand-desc">
+          <p class="footer-brand-desc" data-i18n="brand.footerTagline">
             "Join Together. Ride for Less."
           </p>
 
@@ -818,34 +833,34 @@
 
         <!-- Links: About JODO, How It Works, Explore Bikes, Contact Us -->
         <div>
-          <h4 class="footer-col-title">Navigation</h4>
+          <h4 class="footer-col-title" data-i18n="footer.navTitle">Navigation</h4>
           <ul class="footer-nav-list">
-            <li><a href="#why-jodo">About JODO</a></li>
-            <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#explore">Explore Bikes</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#why-jodo" data-i18n="footer.about">About JODO</a></li>
+            <li><a href="#how-it-works" data-i18n="footer.how">How It Works</a></li>
+            <li><a href="#explore" data-i18n="footer.explore">Explore Bikes</a></li>
+            <li><a href="#contact" data-i18n="footer.contact">Contact Us</a></li>
           </ul>
         </div>
 
         <!-- Links: Privacy Policy, Terms and Conditions -->
         <div>
-          <h4 class="footer-col-title">Legal</h4>
+          <h4 class="footer-col-title" data-i18n="footer.legalTitle">Legal</h4>
           <ul class="footer-nav-list">
-            <li><a href="#privacy">Privacy Policy</a></li>
-            <li><a href="#terms">Terms and Conditions</a></li>
+            <li><a href="#privacy" data-i18n="footer.privacy">Privacy Policy</a></li>
+            <li><a href="#terms" data-i18n="footer.terms">Terms and Conditions</a></li>
           </ul>
         </div>
 
       </div>
 
       <!-- Footer Note (Mandatory) -->
-      <div class="footer-note-box">
+      <div class="footer-note-box" data-i18n="footer.disclaimer">
         JODO is a group-buying facilitation platform. Vehicle purchases are completed directly with dealerships.
       </div>
 
       <!-- Bottom Bar -->
       <div class="footer-bottom">
-        <div>
+        <div data-i18n="footer.rights">
           © 2026 JODO. All rights reserved.
         </div>
       </div>
@@ -862,7 +877,7 @@
       <!-- Modal Header -->
       <div class="modal-header">
         <div>
-          <div style="font-size: 0.75rem; font-weight: 700; color: #A6D8B5; text-transform: uppercase; letter-spacing: 0.05em;">
+          <div style="font-size: 0.75rem; font-weight: 700; color: #A6D8B5; text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="modal.campaignLabel">
             Group Buying Campaign
           </div>
           <div class="modal-title" id="modal-vehicle-title">Royal Enfield Hunter 350</div>
@@ -881,7 +896,7 @@
               Motorcycle • Bengaluru
             </div>
             <div style="font-size: 0.82rem; font-weight: 700; color: #12372A; margin-top: 4px;">
-              Active Group Pool: <span class="text-green">Bengaluru Batch</span>
+              <span data-i18n="modal.activePool">Active Group Pool:</span> <span class="text-green" data-i18n="modal.batch">Bengaluru Batch</span>
             </div>
           </div>
         </div>
@@ -890,19 +905,19 @@
         <form id="group-interest-form">
           
           <div class="form-group">
-            <label class="form-label" for="applicant-name">Your Full Name</label>
-            <input type="text" id="applicant-name" class="form-input" placeholder="Enter your full name" required>
+            <label class="form-label" for="applicant-name" data-i18n="modal.nameLabel">Your Full Name</label>
+            <input type="text" id="applicant-name" class="form-input" placeholder="Enter your full name" data-i18n-placeholder="modal.namePlaceholder" required>
           </div>
 
           <div class="form-group">
-            <label class="form-label" for="applicant-phone">WhatsApp Number</label>
-            <input type="tel" id="applicant-phone" class="form-input" placeholder="+91 98765 43210" pattern="[0-9+ ]{10,15}" required>
+            <label class="form-label" for="applicant-phone" data-i18n="modal.phoneLabel">WhatsApp Number</label>
+            <input type="tel" id="applicant-phone" class="form-input" placeholder="+91 98765 43210" data-i18n-placeholder="modal.phonePlaceholder" pattern="[0-9+ ]{10,15}" required>
           </div>
 
           <div class="form-group">
-            <label class="form-label" for="modal-variant-select">Preferred Variant / Color</label>
+            <label class="form-label" for="modal-variant-select" data-i18n="modal.variantLabel">Preferred Variant / Color</label>
             <select id="modal-variant-select" class="form-select">
-              <option value="Standard">Standard Variant</option>
+              <option value="Standard" data-i18n="modal.variantDefault">Standard Variant</option>
             </select>
           </div>
 
@@ -910,12 +925,12 @@
           <label class="modal-addon-card" for="concierge-addon">
             <input type="checkbox" id="concierge-addon">
             <div class="modal-addon-text">
-              <strong>Add Optional ₹99 Assistance Service</strong>
-              <span>Dedicated WhatsApp support, doorstep test ride coordination, and paperwork pre-checks. (Basic group registration is 100% Free).</span>
+              <strong data-i18n="modal.addonTitle">Add Optional ₹99 Assistance Service</strong>
+              <span data-i18n="modal.addonDesc">Dedicated WhatsApp support, doorstep test ride coordination, and paperwork pre-checks. (Basic group registration is 100% Free).</span>
             </div>
           </label>
 
-          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px 20px;">
+          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px 20px;" data-i18n="modal.submit">
             Join the Group
           </button>
         </form>
@@ -928,6 +943,7 @@
   <div class="toast-container" id="toast-container" aria-live="polite"></div>
 
   <!-- Scripts -->
+  <script src="js/translations.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
