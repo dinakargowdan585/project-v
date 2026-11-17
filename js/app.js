@@ -1,5 +1,5 @@
 /**
- * JODO — Two-Wheeler Group Buying Platform
+ * JODO — Rural Two-Wheeler Buying Club
  * Client-Side Logic & Bilingual Language Management
  */
 
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
 });
 
-// Vehicle Catalog Data for Modal Previews (with Kannada support)
+// Vehicle Catalog Data for Modal Previews & Clusters
 const VEHICLE_DATA = {
   'hunter-350': {
     brand: 'Royal Enfield',
@@ -23,8 +23,10 @@ const VEHICLE_DATA = {
     model_kn: 'ಹಂಟರ್ 350',
     category: 'Motorcycle',
     category_kn: 'ಮೋಟರ್‌ಸೈಕಲ್',
-    city: 'Bengaluru',
-    city_kn: 'ಬೆಂಗಳೂರು',
+    cluster: 'Ramanagara Cluster',
+    cluster_kn: 'ರಾಮನಗರ ಕ್ಲಸ್ಟರ್',
+    city: 'Ramanagara',
+    city_kn: 'ರಾಮನಗರ',
     image: 'assets/images/hunter-350.webp',
     variants: ['Dapper Ash', 'Rebel Blue', 'Factory Black', 'Dapper White']
   },
@@ -35,8 +37,10 @@ const VEHICLE_DATA = {
     model_kn: 'ಅಪಾಚೆ ಆರ್‌ಟಿಆರ್ 160',
     category: 'Motorcycle',
     category_kn: 'ಮೋಟರ್‌ಸೈಕಲ್',
-    city: 'Bengaluru',
-    city_kn: 'ಬೆಂಗಳೂರು',
+    cluster: 'Doddaballapura Cluster',
+    cluster_kn: 'ದೊಡ್ಡಬಳ್ಳಾಪುರ ಕ್ಲಸ್ಟರ್',
+    city: 'Doddaballapura',
+    city_kn: 'ದೊಡ್ಡಬಳ್ಳಾಪುರ',
     image: 'assets/images/apache-rtr-160.webp',
     variants: ['Racing Red', 'Matte Black', 'Knight Black', 'Metallic Blue']
   },
@@ -47,8 +51,10 @@ const VEHICLE_DATA = {
     model_kn: 'ಆಕ್ಟಿವಾ 125',
     category: 'Scooter',
     category_kn: 'ಸ್ಕೂಟರ್',
-    city: 'Bengaluru',
-    city_kn: 'ಬೆಂಗಳೂರು',
+    cluster: 'Nelamangala Cluster',
+    cluster_kn: 'ನೆಲಮಂಗಲ ಕ್ಲಸ್ಟರ್',
+    city: 'Nelamangala',
+    city_kn: 'ನೆಲಮಂಗಲ',
     image: 'assets/images/activa-125.webp',
     variants: ['Rebel Red Metallic', 'Heavy Gray Metallic', 'Pearl Nightstar Black', 'Mid Night Blue']
   },
@@ -59,8 +65,10 @@ const VEHICLE_DATA = {
     model_kn: 'ಯಮಹಾ ಆರ್‌15',
     category: 'Motorcycle',
     category_kn: 'ಮೋಟರ್‌ಸೈಕಲ್',
-    city: 'Bengaluru',
-    city_kn: 'ಬೆಂಗಳೂರು',
+    cluster: 'Hoskote Cluster',
+    cluster_kn: 'ಹೊಸಕೋಟೆ ಕ್ಲಸ್ಟರ್',
+    city: 'Hoskote',
+    city_kn: 'ಹೊಸಕೋಟೆ',
     image: 'assets/images/yamaha-r15.webp',
     variants: ['Racing Blue', 'Metallic Red', 'Dark Knight', 'Intensity White']
   },
@@ -71,8 +79,10 @@ const VEHICLE_DATA = {
     model_kn: 'ಏಥರ್ ರಿಜ್ತಾ',
     category: 'Electric Two-Wheeler',
     category_kn: 'ಎಲೆಕ್ಟ್ರಿಕ್ ದ್ವಿಚಕ್ರ ವಾಹನ',
-    city: 'Bengaluru',
-    city_kn: 'ಬೆಂಗಳೂರು',
+    cluster: 'Hoskote & Malur',
+    cluster_kn: 'ಹೊಸಕೋಟೆ & ಮಾಲೂರು',
+    city: 'Hoskote',
+    city_kn: 'ಹೊಸಕೋಟೆ',
     image: 'assets/images/ather-rizta-opt.webp',
     variants: ['Pangong Blue', 'Deccan Grey', 'Cardamom Green', 'Siachen White']
   },
@@ -83,8 +93,10 @@ const VEHICLE_DATA = {
     model_kn: 'ಸುಜುಕಿ ಆಕ್ಸೆಸ್ 125',
     category: 'Scooter',
     category_kn: 'ಸ್ಕೂಟರ್',
-    city: 'Bengaluru',
-    city_kn: 'ಬೆಂಗಳೂರು',
+    cluster: 'Nelamangala & Tumkur',
+    cluster_kn: 'ನೆಲಮಂಗಲ & ತುಮಕೂರು',
+    city: 'Nelamangala',
+    city_kn: 'ನೆಲಮಂಗಲ',
     image: 'assets/images/access-125.webp',
     variants: ['Solid Ice Green', 'Pearl Mirage White', 'Matte Titanium Grey', 'Metallic Dark Green']
   }
@@ -94,7 +106,6 @@ const VEHICLE_DATA = {
    Language Switcher & Translation Engine
    ========================================================================== */
 function initLanguageSystem() {
-  // 1. Determine Initial Language: from URL param, or localStorage, default to 'en'
   let savedLang = 'en';
   try {
     const urlParams = new URLSearchParams(window.location.search);
@@ -112,7 +123,6 @@ function initLanguageSystem() {
     savedLang = 'en';
   }
 
-  // 2. Attach Event Listeners to all language switcher buttons (desktop + mobile)
   const langButtons = document.querySelectorAll('[data-lang-btn]');
   langButtons.forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -124,7 +134,6 @@ function initLanguageSystem() {
     });
   });
 
-  // 3. Apply the initial language
   setLanguage(savedLang);
 }
 
@@ -132,14 +141,12 @@ function setLanguage(lang) {
   if (lang !== 'en' && lang !== 'kn') lang = 'en';
   currentLanguage = lang;
 
-  // Persist choice in localStorage
   try {
     localStorage.setItem(STORAGE_LANG_KEY, lang);
   } catch (err) {
     console.warn('localStorage not accessible for language persistence:', err);
   }
 
-  // Update HTML and body classes
   document.documentElement.lang = lang;
   if (lang === 'kn') {
     document.body.classList.add('lang-kn');
@@ -147,7 +154,6 @@ function setLanguage(lang) {
     document.body.classList.remove('lang-kn');
   }
 
-  // Update UI state of all language buttons
   const langButtons = document.querySelectorAll('[data-lang-btn]');
   langButtons.forEach(btn => {
     const btnLang = btn.getAttribute('data-lang-btn');
@@ -160,11 +166,9 @@ function setLanguage(lang) {
     }
   });
 
-  // Apply translations to DOM
   if (typeof TRANSLATIONS !== 'undefined' && TRANSLATIONS[lang]) {
     const dict = TRANSLATIONS[lang];
 
-    // Standard text content
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       if (dict[key] !== undefined) {
@@ -172,7 +176,6 @@ function setLanguage(lang) {
       }
     });
 
-    // HTML content (for elements with inner highlights or spans)
     document.querySelectorAll('[data-i18n-html]').forEach(el => {
       const key = el.getAttribute('data-i18n-html');
       if (dict[key] !== undefined) {
@@ -180,7 +183,6 @@ function setLanguage(lang) {
       }
     });
 
-    // Placeholders
     document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
       const key = el.getAttribute('data-i18n-placeholder');
       if (dict[key] !== undefined) {
@@ -188,7 +190,6 @@ function setLanguage(lang) {
       }
     });
 
-    // Aria labels
     document.querySelectorAll('[data-i18n-aria]').forEach(el => {
       const key = el.getAttribute('data-i18n-aria');
       if (dict[key] !== undefined) {
@@ -197,7 +198,6 @@ function setLanguage(lang) {
     });
   }
 
-  // Update open modal if currently displayed
   if (window.updateModalLanguage) {
     window.updateModalLanguage(lang);
   }
@@ -250,11 +250,9 @@ function initVehicleFilter() {
     btn.addEventListener('click', () => {
       const filter = btn.getAttribute('data-filter');
 
-      // Update active button state
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
-      // Filter cards
       cards.forEach(card => {
         const category = card.getAttribute('data-category');
         if (filter === 'all' || category === filter) {
@@ -268,7 +266,7 @@ function initVehicleFilter() {
           card.style.transform = 'translateY(10px)';
           setTimeout(() => {
             card.style.display = 'none';
-          }, 200);
+          }, 180);
         }
       });
     });
@@ -286,32 +284,43 @@ function initModalInteractions() {
 
   const modalTitle = document.getElementById('modal-vehicle-title');
   const modalSub = document.getElementById('modal-vehicle-sub');
+  const modalClusterTag = document.getElementById('modal-cluster-tag');
   const modalThumb = document.getElementById('modal-vehicle-thumb');
   const variantSelect = document.getElementById('modal-variant-select');
 
   let currentVehicleKey = 'hunter-350';
+  let currentCluster = 'Ramanagara Cluster';
 
   openButtons.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       const vehicleKey = btn.getAttribute('data-vehicle') || 'hunter-350';
-      populateModal(vehicleKey);
+      const clusterOverride = btn.getAttribute('data-cluster') || '';
+      populateModal(vehicleKey, clusterOverride);
       openModal();
     });
   });
 
-  function populateModal(key) {
+  function populateModal(key, clusterOverride) {
     currentVehicleKey = key;
     const data = VEHICLE_DATA[key] || VEHICLE_DATA['hunter-350'];
     const isKn = currentLanguage === 'kn';
+
+    if (clusterOverride) {
+      currentCluster = clusterOverride;
+    } else {
+      currentCluster = isKn ? data.cluster_kn : data.cluster;
+    }
 
     if (modalTitle) {
       modalTitle.textContent = isKn ? `${data.brand_kn} ${data.model_kn}` : `${data.brand} ${data.model}`;
     }
     if (modalSub) {
       const categoryStr = isKn ? data.category_kn : data.category;
-      const cityStr = isKn ? data.city_kn : data.city;
-      modalSub.textContent = `${categoryStr} • ${cityStr}`;
+      modalSub.textContent = `${categoryStr} • ${currentCluster}`;
+    }
+    if (modalClusterTag) {
+      modalClusterTag.textContent = currentCluster;
     }
     if (modalThumb) {
       modalThumb.src = data.image;
@@ -325,14 +334,12 @@ function initModalInteractions() {
     }
   }
 
-  // Expose to language switcher so dynamic modal content syncs on language change
   window.updateModalLanguage = function(lang) {
     if (modalOverlay && modalOverlay.classList.contains('open')) {
       populateModal(currentVehicleKey);
     }
   };
 
-  // Support deep-link test parameter ?open=1&vehicle=...
   try {
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.get('open') === '1') {
@@ -374,19 +381,21 @@ function initModalInteractions() {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      const name = document.getElementById('applicant-name').value.trim() || (currentLanguage === 'kn' ? 'ಸವಾರ' : 'Rider');
+      const name = document.getElementById('applicant-name').value.trim() || (currentLanguage === 'kn' ? 'ಖರೀದಿದಾರರು' : 'Buyer');
       const vehicleData = VEHICLE_DATA[currentVehicleKey] || VEHICLE_DATA['hunter-350'];
       const vehicle = currentLanguage === 'kn' ? vehicleData.model_kn : vehicleData.model;
+      const cluster = currentCluster;
       const conciergeChecked = document.getElementById('concierge-addon')?.checked;
 
       closeModal();
 
-      let toastTemplate = TRANSLATIONS[currentLanguage]["modal.toastSuccess"] || "🎉 Thank you, {name}! Your interest in {vehicle}{service} has been submitted.";
-      let serviceText = conciergeChecked ? (TRANSLATIONS[currentLanguage]["modal.toastService"] || " with Optional ₹99 Assistance") : "";
+      let toastTemplate = TRANSLATIONS[currentLanguage]["modal.toastSuccess"] || "🎉 Thank you, {name}! Your interest for {vehicle} in {cluster} has been received{service}.";
+      let serviceText = conciergeChecked ? (TRANSLATIONS[currentLanguage]["modal.toastService"] || " (with Optional ₹99 Assistance)") : "";
 
       const toastMessage = toastTemplate
         .replace('{name}', name)
         .replace('{vehicle}', vehicle)
+        .replace('{cluster}', cluster)
         .replace('{service}', serviceText);
 
       showToast(toastMessage);
@@ -424,7 +433,7 @@ function showToast(message) {
     toast.style.transform = 'translateY(10px)';
     toast.style.transition = 'all 0.3s ease';
     setTimeout(() => toast.remove(), 300);
-  }, 4500);
+  }, 4800);
 }
 
 /* ==========================================================================

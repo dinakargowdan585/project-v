@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JODO — Join Together. Ride for Less.</title>
-  <meta name="description" content="JODO helps people in India get better deals on new motorcycles, scooters, and electric two-wheelers by bringing together multiple interested buyers to negotiate group discounts with authorized dealerships.">
+  <title>JODO — Better Bike Deals Start in Your Community</title>
+  <meta name="description" content="JODO is a rural-first two-wheeler group-buying club connecting buyers from nearby villages to negotiate better offers with authorised motorcycle and scooter dealerships.">
   
   <!-- Favicon SVG -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='10' fill='%2312372A'/><path d='M12 28C12 21 16 14 24 14M16 28C16 23 20 18 28 18' stroke='%233FA66B' stroke-width='3.5' stroke-linecap='round'/><circle cx='28' cy='28' r='4' fill='%23A6D8B5'/><circle cx='14' cy='28' r='4' fill='%23FFFFFF'/></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='8' fill='%2312372A'/><path d='M10 26C10 20 14 14 22 14M15 26C15 21 19 17 26 17' stroke='%233FA66B' stroke-width='3.5' stroke-linecap='round'/><circle cx='26' cy='26' r='3.5' fill='%23A6D8B5'/><circle cx='12' cy='26' r='3.5' fill='%23FFFFFF'/></svg>">
 
   <!-- Google Fonts: Plus Jakarta Sans & Noto Sans Kannada -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,24 +20,24 @@
 <body>
 
   <!-- ========================================================================
-       2. Navigation Bar (Clean & Sticky with Bilingual Switcher)
+       Navigation Bar (Understated, Clean & Simple)
        ======================================================================== -->
   <header class="site-header" id="header">
     <div class="container nav-wrapper">
       
-      <!-- JODO Logo -->
+      <!-- JODO Brand -->
       <a href="#" class="brand-logo" aria-label="JODO Home">
         <div class="logo-symbol">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 19C5 13.5 8.5 8 15 8" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M9 19C9 15 12 11 19 11" stroke="#A6D8B5" stroke-width="2.5" stroke-linecap="round"/>
-            <circle cx="6.5" cy="19" r="2.5" fill="#FFFFFF"/>
-            <circle cx="17.5" cy="19" r="2.5" fill="#A6D8B5"/>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="6" cy="18" r="3"></circle>
+            <circle cx="18" cy="18" r="3"></circle>
+            <path d="M12 18V8l3-3h3"></path>
+            <path d="M6 18l5-10h4"></path>
           </svg>
         </div>
         <div class="brand-text-block">
-          <span class="brand-name">JODO<span>.</span></span>
-          <span class="brand-subline" data-i18n="brand.tagline">Ride For Less</span>
+          <span class="brand-name" data-i18n="brand.name">JODO<span>.</span></span>
+          <span class="brand-subline" data-i18n="brand.tagline">Rural Two-Wheeler Buying Club</span>
         </div>
       </a>
 
@@ -45,14 +45,14 @@
       <nav aria-label="Main Navigation">
         <ul class="nav-links">
           <li><a href="#hero" class="nav-link active" data-i18n="nav.home">Home</a></li>
-          <li><a href="#explore" class="nav-link" data-i18n="nav.explore">Explore Bikes</a></li>
+          <li><a href="#clusters" class="nav-link" data-i18n="nav.clusters">Village Clusters</a></li>
           <li><a href="#how-it-works" class="nav-link" data-i18n="nav.how">How It Works</a></li>
-          <li><a href="#why-jodo" class="nav-link" data-i18n="nav.about">About Us</a></li>
-          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="#why-jodo" class="nav-link" data-i18n="nav.why">Why JODO</a></li>
+          <li><a href="#explore" class="nav-link" data-i18n="nav.bikes">Explore Bikes</a></li>
         </ul>
       </nav>
 
-      <!-- Nav Action -->
+      <!-- Nav Actions -->
       <div class="nav-actions">
         <!-- Language Switcher: English | ಕನ್ನಡ -->
         <div class="lang-switcher" role="group" aria-label="Language selection">
@@ -62,12 +62,12 @@
         </div>
 
         <a href="#explore" class="btn btn-primary nav-join-btn" data-open-modal data-vehicle="hunter-350" data-i18n="nav.join">
-          Join JODO
+          Join a Buyer Group
         </a>
 
         <!-- Mobile Menu Toggle Button -->
         <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -89,121 +89,79 @@
       </div>
       <ul class="mobile-nav-links">
         <li><a href="#hero" class="mobile-nav-link" data-i18n="nav.home">Home</a></li>
-        <li><a href="#explore" class="mobile-nav-link" data-i18n="nav.explore">Explore Bikes</a></li>
+        <li><a href="#clusters" class="mobile-nav-link" data-i18n="nav.clusters">Village Clusters</a></li>
         <li><a href="#how-it-works" class="mobile-nav-link" data-i18n="nav.how">How It Works</a></li>
-        <li><a href="#why-jodo" class="mobile-nav-link" data-i18n="nav.about">About Us</a></li>
-        <li><a href="#contact" class="mobile-nav-link" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="#why-jodo" class="mobile-nav-link" data-i18n="nav.why">Why JODO</a></li>
+        <li><a href="#explore" class="mobile-nav-link" data-i18n="nav.bikes">Explore Bikes</a></li>
       </ul>
       <button class="btn btn-primary" style="width: 100%;" data-open-modal data-vehicle="hunter-350" data-i18n="nav.join">
-        Join JODO
+        Join a Buyer Group
       </button>
     </div>
   </header>
 
   <main>
     <!-- ========================================================================
-         3. Hero Section
+         1. Hero Section (Lighter Editorial Layout on Warm Cream)
          ======================================================================== -->
-    <section class="hero-section" id="hero">
-      <div class="container hero-grid">
+    <section class="hero-editorial" id="hero">
+      <div class="container hero-editorial-grid">
         
-        <!-- Left Hero Content -->
+        <!-- Left Editorial Copy -->
         <div class="hero-content">
-          <h1 class="hero-title">
-            <span data-i18n="hero.title1">Your Next Ride.</span> <br>
-            <span data-i18n="hero.title2">A Better Deal.</span> <br>
-            <span class="highlight" data-i18n="hero.together">Together.</span>
+          <div class="hero-badge-tag">
+            <span class="hero-badge-dot"></span>
+            <span data-i18n="hero.badge">Rural & Semi-Urban Two-Wheeler Platform</span>
+          </div>
+
+          <h1 class="hero-title" data-i18n="hero.title">
+            Better Bike Deals Start in Your Community.
           </h1>
 
-          <p class="hero-description" data-i18n="hero.desc">
-            Why buy alone when you can buy together? Join other bike and scooter buyers, unlock exclusive group offers, and save more on your next ride.
+          <p class="hero-desc" data-i18n="hero.desc">
+            Join people from nearby villages who want the same bike or scooter. JODO brings buyers together and negotiates better offers with dealerships.
           </p>
 
-          <div class="hero-cta-group">
-            <a href="#explore" class="btn btn-primary">
-              <span data-i18n="hero.ctaExplore">Explore Group Deals</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <div class="hero-actions-row">
+            <a href="#clusters" class="btn btn-primary">
+              <span data-i18n="hero.ctaExplore">Find Buyers Near You</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
             </a>
-            <button type="button" class="btn btn-outline-white" data-open-modal data-vehicle="hunter-350" data-i18n="hero.ctaCommunity">
-              Join the JODO Community
-            </button>
+            <a href="#how-it-works" class="btn btn-secondary" data-i18n="hero.ctaHow">
+              How Group Buying Works ↓
+            </a>
           </div>
 
-          <!-- Three Small Trust Highlights -->
-          <div class="hero-trust-row">
-            <div class="trust-item">
-              <div class="trust-icon-box">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="9" cy="7" r="4"></circle>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                </svg>
-              </div>
-              <div>
-                <div class="trust-item-title" data-i18n="hero.trust1Title">Group Buying Power</div>
-                <div class="trust-item-sub" data-i18n="hero.trust1Sub">Strength in numbers</div>
-              </div>
+          <!-- Authentic Trust Checklist -->
+          <div class="hero-trust-list">
+            <div class="hero-trust-bullet">
+              <span class="hero-trust-check">✓</span>
+              <span data-i18n="hero.trust1">100% Free group registration — zero upfront fee</span>
             </div>
-
-            <div class="trust-item">
-              <div class="trust-icon-box">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                </svg>
-              </div>
-              <div>
-                <div class="trust-item-title" data-i18n="hero.trust2Title">Exclusive Dealer Offers</div>
-                <div class="trust-item-sub" data-i18n="hero.trust2Sub">Authorized networks</div>
-              </div>
+            <div class="hero-trust-bullet">
+              <span class="hero-trust-check">✓</span>
+              <span data-i18n="hero.trust2">Direct delivery & billing at authorised dealerships</span>
             </div>
-
-            <div class="trust-item">
-              <div class="trust-icon-box">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <path d="M8 12l3 3 5-5"></path>
-                </svg>
-              </div>
-              <div>
-                <div class="trust-item-title" data-i18n="hero.trust3Title">Free Registration</div>
-                <div class="trust-item-sub" data-i18n="hero.trust3Sub">Zero risk to join</div>
-              </div>
+            <div class="hero-trust-bullet">
+              <span class="hero-trust-check">✓</span>
+              <span data-i18n="hero.trust3">Full manufacturer warranty & RTO registration in your name</span>
             </div>
           </div>
-
         </div>
 
-        <!-- Right Hero Visual Showcase -->
-        <div class="hero-visual">
-          <div class="hero-visual-frame">
-            <img src="assets/images/hero-banner.webp" alt="Stylish Indian motorcycles and scooters in premium showroom" class="hero-banner-img" width="1600" height="1000">
-            <div class="hero-visual-overlay"></div>
-
-            <!-- Floating Status Card 1 -->
-            <div class="floating-card card-top">
-              <div class="floating-badge">
-                <span class="live-pulse"></span>
-                <span data-i18n="hero.hub">Bengaluru Hub</span>
-              </div>
-              <div class="floating-title" data-i18n="hero.waiting">48 Buyers Waiting</div>
-              <div class="floating-sub" data-i18n="hero.hunterModel">Royal Enfield Hunter 350</div>
+        <!-- Right Authentic Photography -->
+        <div class="hero-photo-column">
+          <div class="hero-photo-card">
+            <img src="assets/images/hero-community.webp" alt="Real Indian customer taking delivery of a motorcycle outside an authorized dealership in Ramanagara" class="hero-photo-img" width="1264" height="848">
+            <div class="hero-photo-footer">
+              <span class="hero-photo-tag">Community Delivery • Ramanagara Hub</span>
+              <p class="hero-photo-caption" data-i18n="hero.caption">
+                Real deliveries, real savings: A customer taking delivery of a new motorcycle outside an authorized showroom in Ramanagara, Karnataka.
+              </p>
             </div>
-
-            <!-- Floating Status Card 2 -->
-            <div class="floating-card card-bottom">
-              <div class="floating-badge">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline></svg>
-                <span data-i18n="hero.trust1Title">Group Buying Power</span>
-              </div>
-              <div class="floating-title" data-i18n="hero.quoteTitle">Better Dealership Quotes</div>
-              <div class="floating-sub" data-i18n="hero.quoteSub">Negotiated via collective demand</div>
-            </div>
-
           </div>
         </div>
 
@@ -211,15 +169,311 @@
     </section>
 
     <!-- ========================================================================
-         4. Featured Two-Wheeler Campaigns
+         2. Section: Find Buyers Near Your Village
+         ======================================================================== -->
+    <section class="clusters-section section-padding" id="clusters">
+      <div class="container">
+        
+        <div class="text-center">
+          <span class="section-badge" data-i18n="clusters.badge">Community Demand Pools</span>
+          <h2 class="section-title" data-i18n="clusters.title">Find buyers near your village</h2>
+          <p class="section-subtitle" data-i18n="clusters.subtitle">
+            Two-wheeler buyers from adjacent villages form local clusters to coordinate showroom visits and unlock collective dealership benefits.
+          </p>
+        </div>
+
+        <!-- 4 Village Clusters Grid -->
+        <div class="clusters-grid">
+          
+          <!-- Cluster 1: Ramanagara -->
+          <article class="cluster-card">
+            <div>
+              <div class="cluster-header">
+                <h3 class="cluster-name" data-i18n="cluster.c1.name">Ramanagara – Channapatna Cluster</h3>
+                <span class="cluster-badge-state">KA-42 Hub</span>
+              </div>
+              <p class="cluster-villages" data-i18n="cluster.c1.villages">
+                Bidadi, Harohalli, Kailancha, Virupakshipura & nearby villages
+              </p>
+              <div class="cluster-models-row" data-i18n="cluster.c1.models">
+                Popular demand: Royal Enfield Hunter 350, TVS Apache 160
+              </div>
+            </div>
+            <div class="cluster-actions">
+              <span class="cluster-status-text" data-i18n="cluster.c1.status">
+                Active coordination: 18 interested buyers pooled
+              </span>
+              <button type="button" class="cluster-cta-btn" data-open-modal data-vehicle="hunter-350" data-cluster="Ramanagara Cluster" data-i18n="cluster.joinBtn">
+                Join This Cluster
+              </button>
+            </div>
+          </article>
+
+          <!-- Cluster 2: Nelamangala -->
+          <article class="cluster-card">
+            <div>
+              <div class="cluster-header">
+                <h3 class="cluster-name" data-i18n="cluster.c2.name">Nelamangala – Dobbaspet Cluster</h3>
+                <span class="cluster-badge-state">KA-52 Hub</span>
+              </div>
+              <p class="cluster-villages" data-i18n="cluster.c2.villages">
+                Shivagange, Sompura, Thyamagondlu, Madanayakanahalli
+              </p>
+              <div class="cluster-models-row" data-i18n="cluster.c2.models">
+                Popular demand: Honda Activa 125, Suzuki Access 125
+              </div>
+            </div>
+            <div class="cluster-actions">
+              <span class="cluster-status-text" data-i18n="cluster.c2.status">
+                Active coordination: 22 interested buyers pooled
+              </span>
+              <button type="button" class="cluster-cta-btn" data-open-modal data-vehicle="activa-125" data-cluster="Nelamangala Cluster" data-i18n="cluster.joinBtn">
+                Join This Cluster
+              </button>
+            </div>
+          </article>
+
+          <!-- Cluster 3: Hoskote -->
+          <article class="cluster-card">
+            <div>
+              <div class="cluster-header">
+                <h3 class="cluster-name" data-i18n="cluster.c3.name">Hoskote – Malur Cluster</h3>
+                <span class="cluster-badge-state">KA-53 Hub</span>
+              </div>
+              <p class="cluster-villages" data-i18n="cluster.c3.villages">
+                Sulibele, Anjadahalli, Jadigenahalli, Nandagudi
+              </p>
+              <div class="cluster-models-row" data-i18n="cluster.c3.models">
+                Popular demand: Ather Rizta EV, Yamaha R15
+              </div>
+            </div>
+            <div class="cluster-actions">
+              <span class="cluster-status-text" data-i18n="cluster.c3.status">
+                Active coordination: 14 interested buyers pooled
+              </span>
+              <button type="button" class="cluster-cta-btn" data-open-modal data-vehicle="ather-rizta" data-cluster="Hoskote Cluster" data-i18n="cluster.joinBtn">
+                Join This Cluster
+              </button>
+            </div>
+          </article>
+
+          <!-- Cluster 4: Doddaballapura -->
+          <article class="cluster-card">
+            <div>
+              <div class="cluster-header">
+                <h3 class="cluster-name" data-i18n="cluster.c4.name">Doddaballapura – Gauribidanur Cluster</h3>
+                <span class="cluster-badge-state">KA-43 Hub</span>
+              </div>
+              <p class="cluster-villages" data-i18n="cluster.c4.villages">
+                Tubagere, Sasalu, Rajaghatta, Kasaba
+              </p>
+              <div class="cluster-models-row" data-i18n="cluster.c4.models">
+                Popular demand: TVS Apache 160, Honda Activa 125
+              </div>
+            </div>
+            <div class="cluster-actions">
+              <span class="cluster-status-text" data-i18n="cluster.c4.status">
+                Active coordination: 16 interested buyers pooled
+              </span>
+              <button type="button" class="cluster-cta-btn" data-open-modal data-vehicle="apache-rtr-160" data-cluster="Doddaballapura Cluster" data-i18n="cluster.joinBtn">
+                Join This Cluster
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="cluster-disclaimer" data-i18n="cluster.illustrative">
+          *Sample active coordination clusters. Group formations depend on nearby buyer interest.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. Section: How JODO Works (Four Clear Steps)
+         ======================================================================== -->
+    <section class="how-section section-padding" id="how-it-works">
+      <div class="container">
+        
+        <div class="text-center">
+          <span class="section-badge">Simple 4-Step Process</span>
+          <h2 class="section-title" data-i18n="how.title">How JODO Works</h2>
+          <p class="section-subtitle" data-i18n="how.subtitle">
+            A transparent four-step process connecting village buyers to authorized motorcycle dealerships.
+          </p>
+        </div>
+
+        <div class="how-steps-grid">
+          
+          <!-- Step 1 -->
+          <div class="how-step-card">
+            <div class="how-step-header">
+              <span class="step-num-badge">1</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="step-icon-svg">
+                <circle cx="6" cy="18" r="3"></circle>
+                <circle cx="18" cy="18" r="3"></circle>
+                <path d="M12 18V8l3-3h3"></path>
+                <path d="M6 18l5-10h4"></path>
+              </svg>
+            </div>
+            <h3 class="step-title" data-i18n="how.step1Title">Choose your bike.</h3>
+            <p class="step-desc" data-i18n="how.step1Desc">
+              Select the motorcycle or scooter you intend to purchase within the next 30 to 60 days.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="how-step-card">
+            <div class="how-step-header">
+              <span class="step-num-badge">2</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="step-icon-svg">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="step-title" data-i18n="how.step2Title">Join nearby buyers.</h3>
+            <p class="step-desc" data-i18n="how.step2Desc">
+              Connect with buyers from your taluk and nearby villages who want the same or related vehicle.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="how-step-card">
+            <div class="how-step-header">
+              <span class="step-num-badge">3</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="step-icon-svg">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="step-title" data-i18n="how.step3Title">JODO negotiates with dealerships.</h3>
+            <p class="step-desc" data-i18n="how.step3Desc">
+              We present collective buyer demand to authorised dealerships to negotiate group benefits, accessory bundles, and pricing concessions.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="how-step-card">
+            <div class="how-step-header">
+              <span class="step-num-badge">4</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="step-icon-svg">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h3 class="step-title" data-i18n="how.step4Title">Compare the verified offer and purchase directly from the dealership.</h3>
+            <p class="step-desc" data-i18n="how.step4Desc">
+              Review the transparent deal sheet. Pay the dealership directly, complete official RTO paperwork, and take delivery.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. Section: Why Group Buying Works (Saves Time & Money)
+         ======================================================================== -->
+    <section class="savings-section section-padding" id="why-jodo">
+      <div class="container">
+        
+        <div class="text-center">
+          <span class="section-badge">Real Value, Zero Gimmicks</span>
+          <h2 class="section-title" data-i18n="savings.title">How Group Buying Saves You Time and Money</h2>
+          <p class="section-subtitle" data-i18n="savings.subtitle">
+            Buying a two-wheeler alone from a village is tiring and expensive. Here is how buying together changes the equation.
+          </p>
+        </div>
+
+        <div class="savings-editorial-grid">
+          
+          <!-- Point 1 -->
+          <div class="savings-card">
+            <div class="savings-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3 class="savings-card-title" data-i18n="savings.p1Title">Save Days of Travel Between Showrooms</h3>
+              <p class="savings-card-desc" data-i18n="savings.p1Desc">
+                In rural taluks, visiting 3 or 4 dealerships across towns costs multiple days of lost work and travel. JODO collects verified, written offers for your group so you only visit once to finalize.
+              </p>
+            </div>
+          </div>
+
+          <!-- Point 2 -->
+          <div class="savings-card">
+            <div class="savings-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3 class="savings-card-title" data-i18n="savings.p2Title">Real Leverage Instead of Fixed Retail Markups</h3>
+              <p class="savings-card-desc" data-i18n="savings.p2Desc">
+                An individual buyer walking into a showroom has almost zero bargaining power against mandatory accessory bundles and handling fees. A group of 15–25 buyers gives dealerships strong incentive to offer fleet-level value.
+              </p>
+            </div>
+          </div>
+
+          <!-- Point 3 -->
+          <div class="savings-card">
+            <div class="savings-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3 class="savings-card-title" data-i18n="savings.p3Title">Safe & Direct: 100% Dealership-Billed</h3>
+              <p class="savings-card-desc" data-i18n="savings.p3Desc">
+                JODO never touches your vehicle purchase money. Every rupee is paid directly by you at the authorised showroom counter, with official GST invoice, manufacturer warranty, and RTO registration in your name.
+              </p>
+            </div>
+          </div>
+
+          <!-- Point 4 -->
+          <div class="savings-card">
+            <div class="savings-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="savings-card-title" data-i18n="savings.p4Title">Local Village Community Trust</h3>
+              <p class="savings-card-desc" data-i18n="savings.p4Desc">
+                Coordinate with neighbors and peers from your own taluk. You take delivery with people you know, turning what is often an intimidating showroom visit into a shared community milestone.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. Section: Featured Two-Wheeler Campaigns (Catalog)
          ======================================================================== -->
     <section class="campaigns-section section-padding" id="explore">
       <div class="container">
         
         <div class="text-center">
-          <h2 class="section-title" data-i18n="campaigns.title">Featured Two-Wheeler Campaigns</h2>
+          <span class="section-badge">Verified Vehicle Pools</span>
+          <h2 class="section-title" data-i18n="campaigns.title">Active Two-Wheeler Campaigns</h2>
           <p class="section-subtitle" data-i18n="campaigns.subtitle">
-            Explore ongoing groups in Bengaluru. Join interested buyers of your dream ride to unlock better group offers from authorized dealerships.
+            Explore models currently pooled across Karnataka taluks. Click to join your local buyer group.
           </p>
         </div>
 
@@ -236,14 +490,9 @@
 
           <!-- 1. Royal Enfield Hunter 350 -->
           <article class="vehicle-card" data-category="motorcycle">
-            <div class="card-media has-cutout">
+            <div class="card-media">
+              <span class="card-cluster-pill" data-i18n="card.hunter.cluster">Ramanagara Cluster</span>
               <img src="assets/images/hunter-350.webp" alt="Royal Enfield Hunter 350" class="vehicle-img" loading="lazy" width="800" height="520">
-              <div class="card-top-badges">
-                <span class="badge-city">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                  <span data-i18n="city.bengaluru">Bengaluru</span>
-                </span>
-              </div>
             </div>
 
             <div class="card-body">
@@ -253,50 +502,39 @@
               </div>
               <h3 class="vehicle-name" data-i18n="card.hunter.model">Hunter 350</h3>
 
-              <!-- Example Interested Buyer Count -->
+              <!-- Group Progress -->
               <div class="group-progress-box">
                 <div class="progress-header">
-                  <span class="buyer-count">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
-                    <strong data-i18n="card.hunter.buyers">48 Interested Buyers</strong>
-                  </span>
-                  <span data-i18n="card.hunter.target">Target: 60</span>
+                  <span data-i18n="card.hunter.buyers">18 Interested Buyers</span>
+                  <span data-i18n="card.hunter.target">Target: 25</span>
                 </div>
                 <div class="progress-bar-track">
-                  <div class="progress-bar-fill" style="width: 80%;"></div>
+                  <div class="progress-bar-fill" style="width: 72%;"></div>
                 </div>
                 <div class="progress-footer">
-                  <span data-i18n="card.progressLabel">Illustrative Group Progress</span>
-                  <span class="text-green" data-i18n="card.activeBatch">Active Batch</span>
+                  <span data-i18n="card.progressLabel">Illustrative Cluster Progress</span>
+                  <span data-i18n="card.activeBatch">Active Batch</span>
                 </div>
               </div>
 
-              <!-- Placeholder Offer -->
+              <!-- Deal Highlight -->
               <div class="deal-highlight-box">
-                <div class="deal-highlight-label" data-i18n="card.benefitLabel">Target Group Benefit (Placeholder)</div>
-                <div class="deal-highlight-value" data-i18n="card.hunter.val">Up to ₹9,500*</div>
-                <div class="deal-highlight-note" data-i18n="card.hunter.note">Accessories bundle & dealership benefits</div>
+                <div class="deal-highlight-label" data-i18n="card.benefitLabel">Illustrative Group Benefit Target</div>
+                <div class="deal-highlight-value" data-i18n="card.hunter.val">Est. ₹8,500 – ₹10,500 value</div>
+                <div class="deal-highlight-note" data-i18n="card.hunter.note">Negotiated bundle: Crash guard, pillion backrest & helmet</div>
               </div>
 
-              <div class="card-actions">
-                <button type="button" class="btn btn-card" data-open-modal data-vehicle="hunter-350" data-i18n="card.viewDeal">
-                  View Group Deal
-                </button>
-              </div>
+              <button type="button" class="btn btn-card" data-open-modal data-vehicle="hunter-350" data-cluster="Ramanagara Cluster" data-i18n="card.viewDeal">
+                View Group Deal
+              </button>
             </div>
           </article>
 
           <!-- 2. TVS Apache RTR 160 -->
           <article class="vehicle-card" data-category="motorcycle">
             <div class="card-media">
+              <span class="card-cluster-pill" data-i18n="card.apache.cluster">Doddaballapura Cluster</span>
               <img src="assets/images/apache-rtr-160.webp" alt="TVS Apache RTR 160" class="vehicle-img" loading="lazy" width="800" height="520">
-              <div class="card-media-overlay"></div>
-              <div class="card-top-badges">
-                <span class="badge-city">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                  <span data-i18n="city.bengaluru">Bengaluru</span>
-                </span>
-              </div>
             </div>
 
             <div class="card-body">
@@ -306,50 +544,39 @@
               </div>
               <h3 class="vehicle-name" data-i18n="card.apache.model">Apache RTR 160</h3>
 
-              <!-- Example Interested Buyer Count -->
+              <!-- Group Progress -->
               <div class="group-progress-box">
                 <div class="progress-header">
-                  <span class="buyer-count">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
-                    <strong data-i18n="card.apache.buyers">36 Interested Buyers</strong>
-                  </span>
-                  <span data-i18n="card.apache.target">Target: 50</span>
+                  <span data-i18n="card.apache.buyers">16 Interested Buyers</span>
+                  <span data-i18n="card.apache.target">Target: 20</span>
                 </div>
                 <div class="progress-bar-track">
-                  <div class="progress-bar-fill" style="width: 72%;"></div>
+                  <div class="progress-bar-fill" style="width: 80%;"></div>
                 </div>
                 <div class="progress-footer">
-                  <span data-i18n="card.progressLabel">Illustrative Group Progress</span>
-                  <span class="text-green" data-i18n="card.activeBatch">Active Batch</span>
+                  <span data-i18n="card.progressLabel">Illustrative Cluster Progress</span>
+                  <span data-i18n="card.activeBatch">Active Batch</span>
                 </div>
               </div>
 
-              <!-- Placeholder Offer -->
+              <!-- Deal Highlight -->
               <div class="deal-highlight-box">
-                <div class="deal-highlight-label" data-i18n="card.benefitLabel">Target Group Benefit (Placeholder)</div>
-                <div class="deal-highlight-value" data-i18n="card.apache.val">Up to ₹7,200*</div>
-                <div class="deal-highlight-note" data-i18n="card.apache.note">Helmet & extended warranty package</div>
+                <div class="deal-highlight-label" data-i18n="card.benefitLabel">Illustrative Group Benefit Target</div>
+                <div class="deal-highlight-value" data-i18n="card.apache.val">Est. ₹6,500 – ₹8,000 value</div>
+                <div class="deal-highlight-note" data-i18n="card.apache.note">Negotiated bundle: Extended warranty & ISI helmet package</div>
               </div>
 
-              <div class="card-actions">
-                <button type="button" class="btn btn-card" data-open-modal data-vehicle="apache-rtr-160" data-i18n="card.viewDeal">
-                  View Group Deal
-                </button>
-              </div>
+              <button type="button" class="btn btn-card" data-open-modal data-vehicle="apache-rtr-160" data-cluster="Doddaballapura Cluster" data-i18n="card.viewDeal">
+                View Group Deal
+              </button>
             </div>
           </article>
 
           <!-- 3. Honda Activa 125 -->
           <article class="vehicle-card" data-category="scooter">
             <div class="card-media">
+              <span class="card-cluster-pill" data-i18n="card.activa.cluster">Nelamangala Cluster</span>
               <img src="assets/images/activa-125.webp" alt="Honda Activa 125" class="vehicle-img" loading="lazy" width="800" height="520">
-              <div class="card-media-overlay"></div>
-              <div class="card-top-badges">
-                <span class="badge-city">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                  <span data-i18n="city.bengaluru">Bengaluru</span>
-                </span>
-              </div>
             </div>
 
             <div class="card-body">
@@ -359,50 +586,39 @@
               </div>
               <h3 class="vehicle-name" data-i18n="card.activa.model">Activa 125</h3>
 
-              <!-- Example Interested Buyer Count -->
+              <!-- Group Progress -->
               <div class="group-progress-box">
                 <div class="progress-header">
-                  <span class="buyer-count">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
-                    <strong data-i18n="card.activa.buyers">52 Interested Buyers</strong>
-                  </span>
-                  <span data-i18n="card.activa.target">Target: 60</span>
+                  <span data-i18n="card.activa.buyers">22 Interested Buyers</span>
+                  <span data-i18n="card.activa.target">Target: 30</span>
                 </div>
                 <div class="progress-bar-track">
-                  <div class="progress-bar-fill" style="width: 86%;"></div>
+                  <div class="progress-bar-fill" style="width: 73%;"></div>
                 </div>
                 <div class="progress-footer">
-                  <span data-i18n="card.progressLabel">Illustrative Group Progress</span>
-                  <span class="text-green" data-i18n="card.activeBatch">Active Batch</span>
+                  <span data-i18n="card.progressLabel">Illustrative Cluster Progress</span>
+                  <span data-i18n="card.activeBatch">Active Batch</span>
                 </div>
               </div>
 
-              <!-- Placeholder Offer -->
+              <!-- Deal Highlight -->
               <div class="deal-highlight-box">
-                <div class="deal-highlight-label" data-i18n="card.benefitLabel">Target Group Benefit (Placeholder)</div>
-                <div class="deal-highlight-value" data-i18n="card.activa.val">Up to ₹6,800*</div>
-                <div class="deal-highlight-note" data-i18n="card.activa.note">Protection accessories & service package</div>
+                <div class="deal-highlight-label" data-i18n="card.benefitLabel">Illustrative Group Benefit Target</div>
+                <div class="deal-highlight-value" data-i18n="card.activa.val">Est. ₹5,500 – ₹7,200 value</div>
+                <div class="deal-highlight-note" data-i18n="card.activa.note">Negotiated bundle: Complete protection guard set & footmat</div>
               </div>
 
-              <div class="card-actions">
-                <button type="button" class="btn btn-card" data-open-modal data-vehicle="activa-125" data-i18n="card.viewDeal">
-                  View Group Deal
-                </button>
-              </div>
+              <button type="button" class="btn btn-card" data-open-modal data-vehicle="activa-125" data-cluster="Nelamangala Cluster" data-i18n="card.viewDeal">
+                View Group Deal
+              </button>
             </div>
           </article>
 
           <!-- 4. Yamaha R15 -->
           <article class="vehicle-card" data-category="motorcycle">
             <div class="card-media">
+              <span class="card-cluster-pill" data-i18n="card.yamaha.cluster">Hoskote Cluster</span>
               <img src="assets/images/yamaha-r15.webp" alt="Yamaha R15" class="vehicle-img" loading="lazy" width="800" height="520">
-              <div class="card-media-overlay"></div>
-              <div class="card-top-badges">
-                <span class="badge-city">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                  <span data-i18n="city.bengaluru">Bengaluru</span>
-                </span>
-              </div>
             </div>
 
             <div class="card-body">
@@ -412,49 +628,39 @@
               </div>
               <h3 class="vehicle-name" data-i18n="card.yamaha.model">Yamaha R15</h3>
 
-              <!-- Example Interested Buyer Count -->
+              <!-- Group Progress -->
               <div class="group-progress-box">
                 <div class="progress-header">
-                  <span class="buyer-count">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
-                    <strong data-i18n="card.yamaha.buyers">29 Interested Buyers</strong>
-                  </span>
-                  <span data-i18n="card.yamaha.target">Target: 40</span>
+                  <span data-i18n="card.yamaha.buyers">14 Interested Buyers</span>
+                  <span data-i18n="card.yamaha.target">Target: 20</span>
                 </div>
                 <div class="progress-bar-track">
-                  <div class="progress-bar-fill" style="width: 72%;"></div>
+                  <div class="progress-bar-fill" style="width: 70%;"></div>
                 </div>
                 <div class="progress-footer">
-                  <span data-i18n="card.progressLabel">Illustrative Group Progress</span>
-                  <span class="text-green" data-i18n="card.activeBatch">Active Batch</span>
+                  <span data-i18n="card.progressLabel">Illustrative Cluster Progress</span>
+                  <span data-i18n="card.activeBatch">Active Batch</span>
                 </div>
               </div>
 
-              <!-- Placeholder Offer -->
+              <!-- Deal Highlight -->
               <div class="deal-highlight-box">
-                <div class="deal-highlight-label" data-i18n="card.benefitLabel">Target Group Benefit (Placeholder)</div>
-                <div class="deal-highlight-value" data-i18n="card.yamaha.val">Up to ₹11,000*</div>
-                <div class="deal-highlight-note" data-i18n="card.yamaha.note">Performance gear voucher & insurance subsidy</div>
+                <div class="deal-highlight-label" data-i18n="card.benefitLabel">Illustrative Group Benefit Target</div>
+                <div class="deal-highlight-value" data-i18n="card.yamaha.val">Est. ₹9,000 – ₹11,500 value</div>
+                <div class="deal-highlight-note" data-i18n="card.yamaha.note">Negotiated bundle: Riding gear voucher & insurance subsidy</div>
               </div>
 
-              <div class="card-actions">
-                <button type="button" class="btn btn-card" data-open-modal data-vehicle="yamaha-r15" data-i18n="card.viewDeal">
-                  View Group Deal
-                </button>
-              </div>
+              <button type="button" class="btn btn-card" data-open-modal data-vehicle="yamaha-r15" data-cluster="Hoskote Cluster" data-i18n="card.viewDeal">
+                View Group Deal
+              </button>
             </div>
           </article>
 
           <!-- 5. Ather Rizta (Electric) -->
           <article class="vehicle-card" data-category="electric">
-            <div class="card-media has-cutout">
+            <div class="card-media">
+              <span class="card-cluster-pill" data-i18n="card.ather.cluster">Hoskote & Malur</span>
               <img src="assets/images/ather-rizta-opt.webp" alt="Ather Rizta" class="vehicle-img" loading="lazy" width="800" height="520">
-              <div class="card-top-badges">
-                <span class="badge-city">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                  <span data-i18n="city.bengaluru">Bengaluru</span>
-                </span>
-              </div>
             </div>
 
             <div class="card-body">
@@ -464,50 +670,39 @@
               </div>
               <h3 class="vehicle-name" data-i18n="card.ather.model">Ather Rizta</h3>
 
-              <!-- Example Interested Buyer Count -->
+              <!-- Group Progress -->
               <div class="group-progress-box">
                 <div class="progress-header">
-                  <span class="buyer-count">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
-                    <strong data-i18n="card.ather.buyers">64 Interested Buyers</strong>
-                  </span>
-                  <span data-i18n="card.ather.target">Target: 75</span>
+                  <span data-i18n="card.ather.buyers">19 Interested Buyers</span>
+                  <span data-i18n="card.ather.target">Target: 25</span>
                 </div>
                 <div class="progress-bar-track">
-                  <div class="progress-bar-fill" style="width: 85%;"></div>
+                  <div class="progress-bar-fill" style="width: 76%;"></div>
                 </div>
                 <div class="progress-footer">
-                  <span data-i18n="card.progressLabel">Illustrative Group Progress</span>
-                  <span class="text-green" data-i18n="card.activeBatch">Active Batch</span>
+                  <span data-i18n="card.progressLabel">Illustrative Cluster Progress</span>
+                  <span data-i18n="card.activeBatch">Active Batch</span>
                 </div>
               </div>
 
-              <!-- Placeholder Offer -->
+              <!-- Deal Highlight -->
               <div class="deal-highlight-box">
-                <div class="deal-highlight-label" data-i18n="card.benefitLabel">Target Group Benefit (Placeholder)</div>
-                <div class="deal-highlight-value" data-i18n="card.ather.val">Up to ₹13,500*</div>
-                <div class="deal-highlight-note" data-i18n="card.ather.note">Ather Duo fast charger & Pro pack bundle</div>
+                <div class="deal-highlight-label" data-i18n="card.benefitLabel">Illustrative Group Benefit Target</div>
+                <div class="deal-highlight-value" data-i18n="card.ather.val">Est. ₹11,000 – ₹14,000 value</div>
+                <div class="deal-highlight-note" data-i18n="card.ather.note">Negotiated bundle: Duo home fast-charger & Pro pack waiver</div>
               </div>
 
-              <div class="card-actions">
-                <button type="button" class="btn btn-card" data-open-modal data-vehicle="ather-rizta" data-i18n="card.viewDeal">
-                  View Group Deal
-                </button>
-              </div>
+              <button type="button" class="btn btn-card" data-open-modal data-vehicle="ather-rizta" data-cluster="Hoskote & Malur" data-i18n="card.viewDeal">
+                View Group Deal
+              </button>
             </div>
           </article>
 
           <!-- 6. Suzuki Access 125 -->
           <article class="vehicle-card" data-category="scooter">
             <div class="card-media">
+              <span class="card-cluster-pill" data-i18n="card.access.cluster">Nelamangala & Tumkur</span>
               <img src="assets/images/access-125.webp" alt="Suzuki Access 125" class="vehicle-img" loading="lazy" width="800" height="520">
-              <div class="card-media-overlay"></div>
-              <div class="card-top-badges">
-                <span class="badge-city">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                  <span data-i18n="city.bengaluru">Bengaluru</span>
-                </span>
-              </div>
             </div>
 
             <div class="card-body">
@@ -517,231 +712,74 @@
               </div>
               <h3 class="vehicle-name" data-i18n="card.access.model">Suzuki Access 125</h3>
 
-              <!-- Example Interested Buyer Count -->
+              <!-- Group Progress -->
               <div class="group-progress-box">
                 <div class="progress-header">
-                  <span class="buyer-count">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
-                    <strong data-i18n="card.access.buyers">41 Interested Buyers</strong>
-                  </span>
-                  <span data-i18n="card.access.target">Target: 50</span>
+                  <span data-i18n="card.access.buyers">17 Interested Buyers</span>
+                  <span data-i18n="card.access.target">Target: 25</span>
                 </div>
                 <div class="progress-bar-track">
-                  <div class="progress-bar-fill" style="width: 82%;"></div>
+                  <div class="progress-bar-fill" style="width: 68%;"></div>
                 </div>
                 <div class="progress-footer">
-                  <span data-i18n="card.progressLabel">Illustrative Group Progress</span>
-                  <span class="text-green" data-i18n="card.activeBatch">Active Batch</span>
+                  <span data-i18n="card.progressLabel">Illustrative Cluster Progress</span>
+                  <span data-i18n="card.activeBatch">Active Batch</span>
                 </div>
               </div>
 
-              <!-- Placeholder Offer -->
+              <!-- Deal Highlight -->
               <div class="deal-highlight-box">
-                <div class="deal-highlight-label" data-i18n="card.benefitLabel">Target Group Benefit (Placeholder)</div>
-                <div class="deal-highlight-value" data-i18n="card.access.val">Up to ₹6,500*</div>
-                <div class="deal-highlight-note" data-i18n="card.access.note">Chrome accessories & roadside assistance package</div>
+                <div class="deal-highlight-label" data-i18n="card.benefitLabel">Illustrative Group Benefit Target</div>
+                <div class="deal-highlight-value" data-i18n="card.access.val">Est. ₹5,800 – ₹7,000 value</div>
+                <div class="deal-highlight-note" data-i18n="card.access.note">Negotiated bundle: Chrome kit, floorboard mat & roadside assist</div>
               </div>
 
-              <div class="card-actions">
-                <button type="button" class="btn btn-card" data-open-modal data-vehicle="access-125" data-i18n="card.viewDeal">
-                  View Group Deal
-                </button>
-              </div>
+              <button type="button" class="btn btn-card" data-open-modal data-vehicle="access-125" data-cluster="Nelamangala Cluster" data-i18n="card.viewDeal">
+                View Group Deal
+              </button>
             </div>
           </article>
 
         </div>
 
         <p class="campaign-disclaimer" data-i18n="card.disclaimer">
-          *Note: Buyer counts and placeholder offers shown are illustrative examples. Discounts and dealer offers are negotiated based on group size and confirmed directly with authorized dealerships upon batch closure.
+          *Authenticity Note: Buyer numbers and package values shown are illustrative samples of active village batches. Final dealer offers are negotiated based on confirmed group size and formalized directly with authorised dealerships.
         </p>
 
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         5. How JODO Works
-         ======================================================================== -->
-    <section class="how-section section-padding" id="how-it-works">
-      <div class="container">
-        
-        <div class="text-center">
-          <h2 class="section-title" data-i18n="how.title">How JODO Works</h2>
-          <p class="section-subtitle" data-i18n="how.subtitle">
-            A simple, transparent process that brings buyers together to unlock better two-wheeler deals.
-          </p>
-        </div>
-
-        <!-- 4 Step Cards with Connecting Line Flow -->
-        <div class="steps-wrapper">
-          
-          <!-- Step 1 -->
-          <div class="step-card">
-            <span class="step-number">01</span>
-            <div class="step-icon-box">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="6" cy="18" r="3"></circle>
-                <circle cx="18" cy="18" r="3"></circle>
-                <path d="M12 18V8l3-3h3"></path>
-                <path d="M6 18l5-10h4"></path>
-              </svg>
+        <!-- Optional ₹99 Dedicated Doorstep Assistance Card -->
+        <div class="assistance-card-wrapper">
+          <div class="assistance-card">
+            <div>
+              <span class="assistance-pill" data-i18n="assist.badge">Optional Assistance • ₹99 Only</span>
+              <h3 class="assistance-title" data-i18n="assist.title">Optional ₹99 Dedicated Doorstep Assistance</h3>
+              <p class="assistance-desc" data-i18n="assist.desc">
+                For buyers who would like personal assistance, our ₹99 service provides a dedicated coordinator to help schedule test rides, pre-check RTO documentation, and accompany you during dealership delivery.
+              </p>
+              <div class="free-guarantee-note">
+                <strong data-i18n="assist.notePrefix">Important:</strong> <span data-i18n="assist.note">Basic registration in all JODO buyer groups is 100% Free with zero obligation. This doorstep assistance service is completely optional.</span>
+              </div>
             </div>
-            <h3 class="step-title" data-i18n="how.step1Title">Step 1: Choose Your Ride</h3>
-            <p class="step-desc" data-i18n="how.step1Desc">Select the bike or scooter you want.</p>
-          </div>
 
-          <!-- Step 2 -->
-          <div class="step-card">
-            <span class="step-number">02</span>
-            <div class="step-icon-box">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-              </svg>
+            <div>
+              <ul class="assistance-features-list">
+                <li class="assistance-feature-item">
+                  <span class="assistance-check">✓</span>
+                  <span data-i18n="assist.feat1">Dedicated local language WhatsApp & phone coordinator</span>
+                </li>
+                <li class="assistance-feature-item">
+                  <span class="assistance-check">✓</span>
+                  <span data-i18n="assist.feat2">Coordinated showroom visit with fellow village buyers</span>
+                </li>
+                <li class="assistance-feature-item">
+                  <span class="assistance-check">✓</span>
+                  <span data-i18n="assist.feat3">RTO registration & vehicle documentation pre-check</span>
+                </li>
+                <li class="assistance-feature-item">
+                  <span class="assistance-check">✓</span>
+                  <span data-i18n="assist.feat4">Support with loan paperwork from nationalised & rural banks</span>
+                </li>
+              </ul>
             </div>
-            <h3 class="step-title" data-i18n="how.step2Title">Step 2: Join a Group</h3>
-            <p class="step-desc" data-i18n="how.step2Desc">Connect with other people interested in the same vehicle.</p>
-          </div>
-
-          <!-- Step 3 -->
-          <div class="step-card">
-            <span class="step-number">03</span>
-            <div class="step-icon-box">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                <line x1="8" y1="21" x2="16" y2="21"></line>
-                <line x1="12" y1="17" x2="12" y2="21"></line>
-              </svg>
-            </div>
-            <h3 class="step-title" data-i18n="how.step3Title">Step 3: JODO Negotiates</h3>
-            <p class="step-desc" data-i18n="how.step3Desc">We approach dealerships to negotiate better group offers.</p>
-          </div>
-
-          <!-- Step 4 -->
-          <div class="step-card">
-            <span class="step-number">04</span>
-            <div class="step-icon-box">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-              </svg>
-            </div>
-            <h3 class="step-title" data-i18n="how.step4Title">Step 4: Get Your Deal</h3>
-            <p class="step-desc" data-i18n="how.step4Desc">Compare the offer and purchase directly from the dealership.</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         6. Why Choose JODO?
-         ======================================================================== -->
-    <section class="why-section section-padding" id="why-jodo">
-      <div class="container">
-        
-        <div class="text-center">
-          <h2 class="section-title" data-i18n="why.title">Why Choose JODO?</h2>
-          <p class="section-subtitle" data-i18n="why.subtitle">
-            A smarter, community-driven way to purchase your two-wheeler in India.
-          </p>
-        </div>
-
-        <!-- 4 Feature Cards -->
-        <div class="features-grid">
-          
-          <div class="feature-card">
-            <div class="feature-icon-circle">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
-                <polyline points="17 6 23 6 23 12"></polyline>
-              </svg>
-            </div>
-            <h3 class="feature-title" data-i18n="why.card1Title">Better Group Deals</h3>
-            <p class="feature-desc" data-i18n="why.card1Desc">More interested buyers can create stronger negotiating power.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon-circle">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
-              </svg>
-            </div>
-            <h3 class="feature-title" data-i18n="why.card2Title">Save Time</h3>
-            <p class="feature-desc" data-i18n="why.card2Desc">We bring dealership offers together in one place.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon-circle">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                <polyline points="9 12 11 14 15 10"></polyline>
-              </svg>
-            </div>
-            <h3 class="feature-title" data-i18n="why.card3Title">Trusted Dealerships</h3>
-            <p class="feature-desc" data-i18n="why.card3Desc">Work with verified and authorized dealerships.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon-circle">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="12" y1="8" x2="12" y2="12"></line>
-                <line x1="12" y1="16" x2="12.01" y2="16"></line>
-              </svg>
-            </div>
-            <h3 class="feature-title" data-i18n="why.card4Title">Free to Join</h3>
-            <p class="feature-desc" data-i18n="why.card4Desc">Registration is free. An optional ₹99 assistance service can be shown separately, with its benefits explained clearly.</p>
-          </div>
-
-        </div>
-
-        <!-- Optional ₹99 Assistance Service (Shown Separately) -->
-        <div class="assistance-card">
-          <div>
-            <div class="assistance-pill" data-i18n="assist.badge">
-              Optional Service • ₹99 Only
-            </div>
-            <h3 class="assistance-title" data-i18n="assist.title">Optional ₹99 Assistance Service</h3>
-            <p class="assistance-desc" data-i18n="assist.desc">
-              For buyers who would like dedicated support throughout their purchase, our optional ₹99 assistance service provides personalized coordination from test rides to delivery.
-            </p>
-            <p class="free-guarantee-note">
-              <strong data-i18n="assist.notePrefix">Note:</strong> <span data-i18n="assist.note">Registration and participation in all JODO groups is 100% Free. This assistance service is completely optional.</span>
-            </p>
-          </div>
-
-          <div>
-            <ul class="assistance-features-list">
-              <li class="assistance-feature-item">
-                <span class="assistance-check">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                </span>
-                <span data-i18n="assist.feat1">Dedicated WhatsApp support specialist</span>
-              </li>
-              <li class="assistance-feature-item">
-                <span class="assistance-check">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                </span>
-                <span data-i18n="assist.feat2">Doorstep test ride coordination</span>
-              </li>
-              <li class="assistance-feature-item">
-                <span class="assistance-check">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                </span>
-                <span data-i18n="assist.feat3">Paperwork and documentation pre-check</span>
-              </li>
-              <li class="assistance-feature-item">
-                <span class="assistance-check">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                </span>
-                <span data-i18n="assist.feat4">Priority slot in the active negotiation batch</span>
-              </li>
-            </ul>
           </div>
         </div>
 
@@ -749,23 +787,21 @@
     </section>
 
     <!-- ========================================================================
-         7. Call-to-Action Section
+         6. Call to Action Banner
          ======================================================================== -->
     <section class="cta-section" id="contact">
       <div class="container">
         <div class="cta-box">
-          <h2 class="cta-title">
-            <span data-i18n="cta.title1">Your Dream Ride Is</span> <br>
-            <span data-i18n="cta.title2">Better Together.</span>
+          <div class="cta-badge" data-i18n="cta.badge">Join Rural Karnataka's Buying Network</div>
+          <h2 class="cta-title" data-i18n="cta.title">
+            Ready to buy a two-wheeler with your community?
           </h2>
-
           <p class="cta-text" data-i18n="cta.desc">
-            Join JODO today and be part of a smarter way to buy two-wheelers.
+            Tell us the bike or scooter you want. We will connect you with active buyers in your taluk and notify you as soon as the dealership offer is ready.
           </p>
-
           <div>
-            <button type="button" class="btn btn-primary" style="font-size: 1.05rem; padding: 16px 36px;" data-open-modal data-vehicle="hunter-350">
-              <span data-i18n="cta.btn">Join the Group</span>
+            <button type="button" class="btn btn-primary" style="font-size: 1.05rem; padding: 14px 32px;" data-open-modal data-vehicle="hunter-350" data-cluster="Ramanagara Cluster">
+              <span data-i18n="cta.btn">Join Your Local Buyer Group</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </button>
           </div>
@@ -775,55 +811,50 @@
   </main>
 
   <!-- ========================================================================
-       8. Footer
+       7. Footer (Transparent & Grounded)
        ======================================================================== -->
   <footer class="site-footer">
     <div class="container">
       
       <div class="footer-top">
         
-        <!-- JODO Logo and Tagline -->
+        <!-- JODO Brand -->
         <div>
           <a href="#" class="brand-logo" aria-label="JODO Home">
             <div class="logo-symbol">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 19C5 13.5 8.5 8 15 8" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M9 19C9 15 12 11 19 11" stroke="#A6D8B5" stroke-width="2.5" stroke-linecap="round"/>
-                <circle cx="6.5" cy="19" r="2.5" fill="#FFFFFF"/>
-                <circle cx="17.5" cy="19" r="2.5" fill="#A6D8B5"/>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="6" cy="18" r="3"></circle>
+                <circle cx="18" cy="18" r="3"></circle>
+                <path d="M12 18V8l3-3h3"></path>
+                <path d="M6 18l5-10h4"></path>
               </svg>
             </div>
             <div class="brand-text-block">
-              <span class="brand-name">JODO<span>.</span></span>
-              <span class="brand-subline" data-i18n="brand.tagline">Ride For Less</span>
+              <span class="brand-name" style="color: #FFFFFF;" data-i18n="brand.name">JODO<span style="color: var(--color-sage);">.</span></span>
+              <span class="brand-subline" style="color: var(--color-sage);" data-i18n="brand.tagline">Rural Two-Wheeler Buying Club</span>
             </div>
           </a>
 
-          <p class="footer-brand-desc" data-i18n="brand.footerTagline">
-            "Join Together. Ride for Less."
+          <p class="footer-brand-desc" data-i18n="footer.desc">
+            JODO is a rural-first group-buying platform that helps two-wheeler buyers from adjacent villages coordinate demand and negotiate transparent offers with authorised dealerships.
           </p>
 
-          <!-- Social Icons: Instagram, YouTube, Facebook -->
+          <!-- Social Channels -->
           <div class="footer-social-links" aria-label="Social media channels">
-            <!-- Instagram -->
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Follow JODO on Instagram">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
               </svg>
             </a>
-
-            <!-- YouTube -->
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Subscribe to JODO on YouTube">
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
                 <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
               </svg>
             </a>
-
-            <!-- Facebook -->
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Follow JODO on Facebook">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
               </svg>
@@ -831,37 +862,38 @@
           </div>
         </div>
 
-        <!-- Links: About JODO, How It Works, Explore Bikes, Contact Us -->
+        <!-- Platform Links -->
         <div>
-          <h4 class="footer-col-title" data-i18n="footer.navTitle">Navigation</h4>
+          <h4 class="footer-col-title" data-i18n="footer.navTitle">Platform</h4>
           <ul class="footer-nav-list">
-            <li><a href="#why-jodo" data-i18n="footer.about">About JODO</a></li>
+            <li><a href="#clusters" data-i18n="footer.clusters">Village Clusters</a></li>
             <li><a href="#how-it-works" data-i18n="footer.how">How It Works</a></li>
-            <li><a href="#explore" data-i18n="footer.explore">Explore Bikes</a></li>
-            <li><a href="#contact" data-i18n="footer.contact">Contact Us</a></li>
+            <li><a href="#explore" data-i18n="footer.bikes">Vehicle Models</a></li>
+            <li><a href="#why-jodo" data-i18n="footer.why">Why JODO</a></li>
           </ul>
         </div>
 
-        <!-- Links: Privacy Policy, Terms and Conditions -->
+        <!-- Transparency & Legal Links -->
         <div>
-          <h4 class="footer-col-title" data-i18n="footer.legalTitle">Legal</h4>
+          <h4 class="footer-col-title" data-i18n="footer.legalTitle">Transparency & Legal</h4>
           <ul class="footer-nav-list">
             <li><a href="#privacy" data-i18n="footer.privacy">Privacy Policy</a></li>
-            <li><a href="#terms" data-i18n="footer.terms">Terms and Conditions</a></li>
+            <li><a href="#terms" data-i18n="footer.terms">Terms of Service</a></li>
+            <li><a href="#contact" data-i18n="footer.contact">Contact JODO Support</a></li>
           </ul>
         </div>
 
       </div>
 
-      <!-- Footer Note (Mandatory) -->
-      <div class="footer-note-box" data-i18n="footer.disclaimer">
-        JODO is a group-buying facilitation platform. Vehicle purchases are completed directly with dealerships.
+      <!-- Regulatory Disclaimer Note -->
+      <div class="footer-disclaimer-box" data-i18n="footer.disclaimer">
+        Regulatory & Legal Disclosure: JODO is a demand-aggregation and group-buying facilitation platform. JODO does not sell vehicles, hold dealership licenses, or collect purchase payments. All vehicle sales, invoicing, registration, and delivery are executed directly by authorised vehicle dealerships.
       </div>
 
       <!-- Bottom Bar -->
       <div class="footer-bottom">
         <div data-i18n="footer.rights">
-          © 2026 JODO. All rights reserved.
+          © 2026 JODO Technologies Private Limited. All rights reserved.
         </div>
       </div>
 
@@ -877,8 +909,8 @@
       <!-- Modal Header -->
       <div class="modal-header">
         <div>
-          <div style="font-size: 0.75rem; font-weight: 700; color: #A6D8B5; text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="modal.campaignLabel">
-            Group Buying Campaign
+          <div style="font-size: 0.75rem; font-weight: 700; color: var(--color-sage); text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="modal.campaignLabel">
+            Community Buyer Group
           </div>
           <div class="modal-title" id="modal-vehicle-title">Royal Enfield Hunter 350</div>
         </div>
@@ -892,11 +924,11 @@
         <div class="modal-vehicle-preview">
           <img src="assets/images/hunter-350.webp" alt="Vehicle preview" id="modal-vehicle-thumb" class="modal-thumb">
           <div>
-            <div id="modal-vehicle-sub" class="modal-vehicle-sub">
-              Motorcycle • Bengaluru
+            <div id="modal-vehicle-sub" style="font-size: 0.88rem; font-weight: 700; color: var(--color-forest);">
+              Motorcycle • Ramanagara Cluster
             </div>
-            <div style="font-size: 0.82rem; font-weight: 700; color: #12372A; margin-top: 4px;">
-              <span data-i18n="modal.activePool">Active Group Pool:</span> <span class="text-green" data-i18n="modal.batch">Bengaluru Batch</span>
+            <div style="font-size: 0.8rem; font-weight: 600; color: var(--text-light); margin-top: 2px;">
+              <span data-i18n="modal.activePool">Selected Taluk Cluster:</span> <span id="modal-cluster-tag" style="color: var(--color-deep-green); font-weight: 700;">Ramanagara Cluster</span>
             </div>
           </div>
         </div>
@@ -905,13 +937,18 @@
         <form id="group-interest-form">
           
           <div class="form-group">
-            <label class="form-label" for="applicant-name" data-i18n="modal.nameLabel">Your Full Name</label>
-            <input type="text" id="applicant-name" class="form-input" placeholder="Enter your full name" data-i18n-placeholder="modal.namePlaceholder" required>
+            <label class="form-label" for="applicant-name" data-i18n="modal.nameLabel">Your Full Name *</label>
+            <input type="text" id="applicant-name" class="form-input" placeholder="e.g. Ramesh Gowda" data-i18n-placeholder="modal.namePlaceholder" required>
           </div>
 
           <div class="form-group">
-            <label class="form-label" for="applicant-phone" data-i18n="modal.phoneLabel">WhatsApp Number</label>
-            <input type="tel" id="applicant-phone" class="form-input" placeholder="+91 98765 43210" data-i18n-placeholder="modal.phonePlaceholder" pattern="[0-9+ ]{10,15}" required>
+            <label class="form-label" for="applicant-phone" data-i18n="modal.phoneLabel">WhatsApp Mobile Number *</label>
+            <input type="tel" id="applicant-phone" class="form-input" placeholder="10-digit mobile number" data-i18n-placeholder="modal.phonePlaceholder" pattern="[0-9+ ]{10,15}" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="applicant-village" data-i18n="modal.villageLabel">Your Village / Taluk Name *</label>
+            <input type="text" id="applicant-village" class="form-input" placeholder="e.g. Harohalli, Ramanagara" data-i18n-placeholder="modal.villagePlaceholder" required>
           </div>
 
           <div class="form-group">
@@ -925,14 +962,18 @@
           <label class="modal-addon-card" for="concierge-addon">
             <input type="checkbox" id="concierge-addon">
             <div class="modal-addon-text">
-              <strong data-i18n="modal.addonTitle">Add Optional ₹99 Assistance Service</strong>
-              <span data-i18n="modal.addonDesc">Dedicated WhatsApp support, doorstep test ride coordination, and paperwork pre-checks. (Basic group registration is 100% Free).</span>
+              <strong data-i18n="modal.addonTitle">Add Optional ₹99 Dedicated Assistance Service</strong>
+              <span data-i18n="modal.addonDesc">Get a dedicated local coordinator to verify paperwork and help coordinate your showroom visit. (Standard registration is 100% Free).</span>
             </div>
           </label>
 
-          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px 20px;" data-i18n="modal.submit">
-            Join the Group
+          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 13px 20px;" data-i18n="modal.submit">
+            Join Buyer Pool (100% Free)
           </button>
+
+          <p class="modal-disclaimer-note" data-i18n="modal.note">
+            No payment required now. You will receive an SMS and WhatsApp invitation when the dealership offer for your cluster is finalized.
+          </p>
         </form>
 
       </div>
