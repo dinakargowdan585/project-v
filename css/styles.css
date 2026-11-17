@@ -2,44 +2,47 @@
    JODO — Rural Two-Wheeler Buying Club
    Authentic Indian Product Design System
    
-   Palette:
-   - Primary Forest Green: #12372A
-   - Deep Green:           #1F513D
-   - Fresh Green:          #3FA66B
-   - Sage:                 #A6D8B5
+   Grayscale Palette (Mapped from original green shades):
+   - Primary Charcoal:     #18181B (mapped from Forest Green #12372A)
+   - Deep Graphite:        #27272A (mapped from Deep Green #1F513D)
+   - Dark Accent Gray:     #212224 (mapped from Fresh Green #3FA66B)
+   - Hover Black:          #000000 (mapped from #32925b)
+   - Silver Accent:        #9CA3AF (mapped from Sage #A6D8B5)
+   - Light Gray Tint:      #F0F1F3 (mapped from Sage Light #EAF5EE)
+   - Border Track Gray:    #E5E7EB (mapped from Sage Track #DCEFE3)
    - Warm Cream:           #F4F1E8
    - White:                #FFFFFF
-   - Main Text:            #173126
-   - Footer:               #102B21
+   - Main Charcoal Text:   #18181B (mapped from Main Text #173126)
+   - Deep Footer Black:    #121214 (mapped from Footer #102B21)
    ========================================================================== */
 
 :root {
-  /* Brand Palette */
-  --color-forest: #12372A;
-  --color-forest-dark: #0B241B;
-  --color-deep-green: #1F513D;
-  --color-fresh-green: #3FA66B;
-  --color-fresh-hover: #32925b;
-  --color-sage: #A6D8B5;
-  --color-sage-light: #EAF5EE;
-  --color-sage-track: #DCEFE3;
-  --color-sage-border: rgba(166, 216, 181, 0.45);
+  /* Brand Palette — Respective Shades of Gray */
+  --color-forest: #18181B;
+  --color-forest-dark: #121214;
+  --color-deep-green: #27272A;
+  --color-fresh-green: #212224;
+  --color-fresh-hover: #000000;
+  --color-sage: #9CA3AF;
+  --color-sage-light: #F0F1F3;
+  --color-sage-track: #E5E7EB;
+  --color-sage-border: rgba(156, 163, 175, 0.4);
   --color-cream: #F4F1E8;
   --color-cream-card: #FAF8F2;
   --color-white: #FFFFFF;
-  --color-footer: #102B21;
+  --color-footer: #121214;
 
   /* Typography Colors */
-  --text-main: #173126;
-  --text-muted: #3D5A4D;
-  --text-light: #5B7B6D;
+  --text-main: #18181B;
+  --text-muted: #52525B;
+  --text-light: #71717A;
   --text-inverse: #FFFFFF;
-  --text-sage: #A6D8B5;
+  --text-sage: #9CA3AF;
 
   /* Crisp, Grounded Borders & Shadows */
-  --border-subtle: rgba(18, 55, 42, 0.12);
-  --border-card: rgba(18, 55, 42, 0.15);
-  --border-sage-tint: rgba(63, 166, 107, 0.25);
+  --border-subtle: rgba(24, 24, 27, 0.1);
+  --border-card: rgba(24, 24, 27, 0.14);
+  --border-sage-tint: rgba(39, 39, 42, 0.18);
 
   --radius-xs: 4px;
   --radius-sm: 6px;
@@ -47,9 +50,9 @@
   --radius-lg: 12px;
   --radius-pill: 999px;
 
-  --shadow-subtle: 0 1px 3px rgba(18, 55, 42, 0.05);
-  --shadow-card: 0 2px 8px rgba(18, 55, 42, 0.06);
-  --shadow-hover: 0 6px 16px rgba(18, 55, 42, 0.1);
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 6px 16px rgba(0, 0, 0, 0.08);
 
   /* Layout */
   --container-max: 1200px;
@@ -189,7 +192,7 @@ button, input, select {
 }
 
 .btn-secondary:hover {
-  background: rgba(18, 55, 42, 0.06);
+  background: rgba(24, 24, 27, 0.06);
   color: var(--color-forest);
 }
 
@@ -253,7 +256,7 @@ button, input, select {
 }
 
 .brand-name span {
-  color: var(--color-fresh-green);
+  color: var(--color-sage);
 }
 
 .brand-subline {
@@ -290,7 +293,7 @@ button, input, select {
   left: 0;
   width: 100%;
   height: 2px;
-  background: var(--color-fresh-green);
+  background: var(--color-forest);
   border-radius: 2px;
 }
 
@@ -589,7 +592,7 @@ button, input, select {
   align-items: center;
   justify-content: space-between;
   padding-top: 14px;
-  border-top: 1px solid rgba(18, 55, 42, 0.08);
+  border-top: 1px solid rgba(24, 24, 27, 0.08);
 }
 
 .cluster-status-text {
@@ -1055,6 +1058,18 @@ button, input, select {
   margin-bottom: 28px;
 }
 
+.cta-section .btn-primary {
+  background: #FFFFFF;
+  color: var(--color-forest);
+  border-color: #FFFFFF;
+}
+
+.cta-section .btn-primary:hover {
+  background: var(--color-cream);
+  color: #000000;
+  border-color: var(--color-cream);
+}
+
 /* ==========================================================================
    8. Footer (Transparent & Grounded)
    ========================================================================== */
@@ -1154,7 +1169,7 @@ button, input, select {
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(11, 36, 27, 0.75);
+  background: rgba(18, 18, 20, 0.75);
   backdrop-filter: blur(4px);
   z-index: 1000;
   display: flex;

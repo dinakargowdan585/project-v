@@ -20,14 +20,15 @@ The platform is exclusively for:
 
 ## 🎨 Design System & Bilingual Support
 
-- **Primary Forest Green:** `#12372A`
-- **Deep Green:** `#1F513D`
-- **Fresh Green:** `#3FA66B`
-- **Sage:** `#A6D8B5`
-- **Warm Cream:** `#F4F1E8`
+- **Primary Charcoal:** `#18181B` (mapped from Forest Green)
+- **Deep Graphite:** `#27272A` (mapped from Deep Green)
+- **Dark Accent Gray:** `#212224` (mapped from Fresh Green)
+- **Silver Accent:** `#9CA3AF` (mapped from Sage)
+- **Light Gray Tint:** `#F0F1F3` (mapped from Sage Light)
+- **Warm Cream Background:** `#F4F1E8`
 - **White:** `#FFFFFF`
-- **Main Text:** `#173126`
-- **Footer:** `#102B21`
+- **Main Text:** `#18181B`
+- **Deep Footer Black:** `#121214`
 - **Typography:** Plus Jakarta Sans & Noto Sans Kannada
 - **Bilingual Switcher:** Fully integrated toggle (`English | ಕನ್ನಡ`) in top navbar and mobile drawer with instant DOM re-translation and `localStorage` persistence.
 - **Authentic Visual Language:** Grounded editorial layout, genuine photography, crisp 1px borders, subtle 6–12px radii, no artificial crowdfunding progress bars, and no generic AI landing page tropes.
