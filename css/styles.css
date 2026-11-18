@@ -2,33 +2,36 @@
    JODO — Rural Two-Wheeler Buying Club
    Authentic Indian Product Design System
    
-   Grayscale Palette (Mapped from original green shades):
+   Grayscale & Neutral Palette:
    - Primary Charcoal:     #18181B (mapped from Forest Green #12372A)
    - Deep Graphite:        #27272A (mapped from Deep Green #1F513D)
    - Dark Accent Gray:     #212224 (mapped from Fresh Green #3FA66B)
    - Hover Black:          #000000 (mapped from #32925b)
    - Silver Accent:        #9CA3AF (mapped from Sage #A6D8B5)
-   - Light Gray Tint:      #F0F1F3 (mapped from Sage Light #EAF5EE)
+   - Light Gray Tint:      #ECEEF2 (mapped from Sage Light #EAF5EE)
    - Border Track Gray:    #E5E7EB (mapped from Sage Track #DCEFE3)
-   - Warm Cream:           #F4F1E8
-   - White:                #FFFFFF
+   - Neutral Light Surface:#F5F5F7 (replaced skin / warm cream tone)
+   - Neutral Card Surface: #FFFFFF
    - Main Charcoal Text:   #18181B (mapped from Main Text #173126)
    - Deep Footer Black:    #121214 (mapped from Footer #102B21)
    ========================================================================== */
 
 :root {
-  /* Brand Palette — Respective Shades of Gray */
+  /* Brand Palette — Respective Shades of Gray & Clean Neutral Surfaces */
   --color-forest: #18181B;
   --color-forest-dark: #121214;
   --color-deep-green: #27272A;
   --color-fresh-green: #212224;
   --color-fresh-hover: #000000;
   --color-sage: #9CA3AF;
-  --color-sage-light: #F0F1F3;
+  --color-sage-light: #ECEEF2;
   --color-sage-track: #E5E7EB;
   --color-sage-border: rgba(156, 163, 175, 0.4);
-  --color-cream: #F4F1E8;
-  --color-cream-card: #FAF8F2;
+  --color-surface-subtle: #F5F5F7;
+  --color-surface-card: #FFFFFF;
+  --color-surface-hover: #EBEBF0;
+  --color-cream: #F5F5F7;
+  --color-cream-card: #FFFFFF;
   --color-white: #FFFFFF;
   --color-footer: #121214;
 
@@ -539,7 +542,7 @@ button, input, select {
 
 .cluster-card:hover {
   border-color: var(--color-deep-green);
-  background: #FAF8F2;
+  background: #FFFFFF;
   box-shadow: var(--shadow-card);
 }
 
@@ -1065,9 +1068,9 @@ button, input, select {
 }
 
 .cta-section .btn-primary:hover {
-  background: var(--color-cream);
+  background: var(--color-surface-hover);
   color: #000000;
-  border-color: var(--color-cream);
+  border-color: var(--color-surface-hover);
 }
 
 /* ==========================================================================

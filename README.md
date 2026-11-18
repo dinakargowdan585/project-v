@@ -25,7 +25,7 @@ The platform is exclusively for:
 - **Dark Accent Gray:** `#212224` (mapped from Fresh Green)
 - **Silver Accent:** `#9CA3AF` (mapped from Sage)
 - **Light Gray Tint:** `#F0F1F3` (mapped from Sage Light)
-- **Warm Cream Background:** `#F4F1E8`
+- **Neutral Light Surface:** `#F5F5F7`
 - **White:** `#FFFFFF`
 - **Main Text:** `#18181B`
 - **Deep Footer Black:** `#121214`
